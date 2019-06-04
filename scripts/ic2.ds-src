@@ -1,0 +1,14 @@
+version 1;
+id ic2;
+bid 900ee9b9-17a1-49c2-81ab-40dbc554ef41;
+name "Industrial Craft 2";
+icon "http://dccg.herokuapp.com/cfproject/242638/avatar";
+description "Small fixes for IC2 noising issues.";
+authors ["Zeitheron"];
+
+color #909090 -> #373A3F;
+color #EDEDED -> #54575B;
+color #FBFBFB -> #5D6166;
+color #FEFEFE -> #5D6166;
+color #8C8C8C -> #35383D;
+color #7E7E7E -> #383B3F;

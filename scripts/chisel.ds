@@ -1,0 +1,9 @@
+version 1;
+id chisel;
+name "Chisel 2";
+description "Adds support for Chisel 2 GUIs.";
+icon "http://dccg.herokuapp.com/cfproject/235279/avatar";
+
+include chisel:textures/autochisel.png
+include chisel:textures/chisel2gui.png
+include chisel:textures/chiselguihitech.png

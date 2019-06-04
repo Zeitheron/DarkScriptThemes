@@ -1,0 +1,7 @@
+version 1;
+id extrautils2;
+description "Adds support for Extra Utilities 2 GUIs.";
+name "Extra Utilities 2";
+icon "http://dccg.herokuapp.com/cfproject/225561/avatar";
+
+include extrautils2:textures/gui_*

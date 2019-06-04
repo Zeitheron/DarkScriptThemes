@@ -1,0 +1,20 @@
+[
+	{
+		"id": "chisel.ds",
+		"name": "Chisel 2",
+		"description": "Adds support for Chisel 2 GUIs.",
+		"icon": "http://dccg.herokuapp.com/cfproject/235279/avatar"
+	},
+	{
+		"id": "extrautils2.ds",
+		"name": "Extra Utilites 2",
+		"description": "Adds support for Extra Utilites 2 GUIs.",
+		"icon": "http://dccg.herokuapp.com/cfproject/225561/avatar"
+	},
+	{
+		"id": "solarflux.ds",
+		"name": "Solar Flux Reborn",
+		"description": "Small fixes for Solar Flux Reborn GUIs.",
+		"icon": "http://dccg.herokuapp.com/cfproject/246974/avatar"
+	}
+]

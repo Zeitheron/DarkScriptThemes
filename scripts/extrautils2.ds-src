@@ -4,5 +4,6 @@ bid f8000f28-68a8-4f54-aadc-86ae44f343f4;
 description "Adds support for Extra Utilities 2 GUIs.";
 name "Extra Utilities 2";
 icon "http://dccg.herokuapp.com/cfproject/225561/avatar";
+require mod "extrautils2";
 
 include extrautils2:textures/gui_*

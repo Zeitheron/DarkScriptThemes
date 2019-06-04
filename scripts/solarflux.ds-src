@@ -4,5 +4,6 @@ bid 48a3b689-c192-4cad-8cc1-63f260a08934;
 description "Small fixes for Solar Flux Reborn GUIs.";
 name "Solar Flux Reborn";
 icon "http://dccg.herokuapp.com/cfproject/246974/avatar";
+require mod "solarflux";
 
 in "solarflux:textures/gui/elements.png" exclude rectX256(0, 64, 64, 48);

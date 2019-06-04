@@ -5,6 +5,7 @@ name "Industrial Craft 2";
 icon "http://dccg.herokuapp.com/cfproject/242638/avatar";
 description "Small fixes for IC2 noising issues.";
 authors ["Zeitheron"];
+require mod "ic2";
 
 color #909090 -> #373A3F;
 color #EDEDED -> #54575B;

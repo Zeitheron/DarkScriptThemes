@@ -7,6 +7,8 @@ description "Small fixes for IC2 noising issues.";
 authors ["Zeitheron"];
 require mod "ic2";
 
+text transform in ic2.core.GuiIC2;
+
 color #909090 -> #373A3F;
 color #EDEDED -> #54575B;
 color #FBFBFB -> #5D6166;

@@ -4,6 +4,7 @@ bid eaf580ad-fc94-4d3b-806f-cba8a551b00d;
 name "Chisel 2";
 description "Adds support for Chisel 2 GUIs.";
 icon "http://dccg.herokuapp.com/cfproject/235279/avatar";
+authors ["Zeitheron"];
 require mod "chisel";
 
 include chisel:textures/autochisel.png

@@ -1,0 +1,14 @@
+version 1;
+id mekanism;
+bid 6d387197-a988-4e92-937f-0d744f3c6e36;
+name "Mekanism";
+icon "http://dccg.herokuapp.com/cfproject/268560/avatar";
+description "Provide support for Mekanism.";
+authors ["Zeitheron"];
+require mod "mekanism";
+
+# Let text recoloring in any mekanism gui
+text transform in mekanism.client.gui.*;
+
+# Include mekanism textures
+include mekanism:gui/*;

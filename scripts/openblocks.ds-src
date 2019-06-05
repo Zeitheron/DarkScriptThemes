@@ -1,0 +1,12 @@
+version 1;
+id openblocks;
+bid 4e577810-8b02-478c-9108-c39ea71036b0;
+name "Open Blocks";
+icon "http://dccg.herokuapp.com/cfproject/228816/avatar";
+description "Small fix of text coloring with Open Blocks";
+authors ["Zeitheron"];
+require mod "openblocks";
+
+# Let text recoloring in any AE2 gui
+text transform in openblocks.client.gui.*;
+text transform in openmods.gui.*;

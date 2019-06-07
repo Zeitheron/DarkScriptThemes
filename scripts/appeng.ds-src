@@ -1,6 +1,6 @@
 version 1;
-id appeng;
 bid 1562a81b-704b-413a-a311-3c34d6c2d3d0;
+id appeng;
 name "Applied Energistics 2";
 icon "http://dccg.herokuapp.com/cfproject/223794/avatar";
 description "Provide support for Applied Energistics 2.";

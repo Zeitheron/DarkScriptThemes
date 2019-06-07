@@ -1,6 +1,6 @@
 version 1;
-id openblocks;
 bid 4e577810-8b02-478c-9108-c39ea71036b0;
+id openblocks;
 name "Open Blocks";
 icon "http://dccg.herokuapp.com/cfproject/228816/avatar";
 description "Small fix of text coloring with Open Blocks";

@@ -1,0 +1,12 @@
+version 1;
+bid b1aadf8b-3f88-4d4c-a0f2-a4a77e9b5fce
+id opencomputers;
+name "Open Computers";
+icon "http://dccg.herokuapp.com/cfproject/223008/avatar";
+description "Fix OpenComputers's GUI.";
+authors ["Goldenpants21"];
+require mod "opencomputers";
+
+color #E3E3E3 -> #575B60;
+
+text transform in li.cil.oc.client.gui.*;

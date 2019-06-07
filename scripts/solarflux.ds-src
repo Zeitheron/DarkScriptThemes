@@ -8,3 +8,5 @@ authors ["Zeitheron"];
 require mod "solarflux";
 
 in "solarflux:textures/gui/elements.png" exclude rectX256(0, 64, 64, 48);
+
+in "solarflux:textures/gui/elements.png" color #7D8989 -> #29493C;

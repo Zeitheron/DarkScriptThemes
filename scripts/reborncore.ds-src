@@ -1,0 +1,24 @@
+version 1;
+bid ff77062e-16c0-472a-9cc9-bd5ed2af96cd;
+id reborncore;
+name "Reborn Core";
+icon "http://dccg.herokuapp.com/cfproject/237903/avatar";
+description "Texture fixes for RebornCore";
+authors ["Zeitheron"];
+require mod "reborncore";
+
+color #8A8A8A -> #35383D;
+color #898989 -> #35383D;
+
+color #FEFEFE -> #64686D;
+color #FDFDFD -> #64686D;
+color #FCFCFC -> #64686D;
+color #FBFBFB -> #64686D;
+color #FAFAFA -> #64686D;
+color #F9F9F9 -> #64686D;
+color #F8F8F8 -> #64686D;
+color #F7F7F7 -> #64686D;
+color #F5F5F5 -> #64686D;
+color #F4F4F4 -> #64686D;
+
+text transform in reborncore.client.gui.*;

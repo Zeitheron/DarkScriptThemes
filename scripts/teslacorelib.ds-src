@@ -1,0 +1,22 @@
+version 1;
+bid 25aad5f9-0797-4daf-91dc-c5a70b887a7f;
+id teslacorelib;
+name "Tesla Core Lib";
+icon "http://dccg.herokuapp.com/cfproject/254602/avatar";
+description "Texture fixes for Tesla Core Lib";
+authors ["Zeitheron"];
+require mod "teslacorelib";
+
+const basic-machine: "teslacorelib:textures/gui/basic-machine.png";
+
+in $basic-machine exclude rectX256(146, 226, 86, 16);
+in $basic-machine exclude rectX256(110, 210, 32, 14);
+in $basic-machine color #CDD3D3 -> #35383D;
+in $basic-machine color #ADADAD -> #3D4044;
+in $basic-machine color #6B6B6B -> #35383D;
+in $basic-machine color #606060 -> #151719;
+
+text transform in net.ndrei.teslacorelib.gui.*;
+text transform in net.ndrei.teslacorelib.render.*;
+
+text color #40403f -> #BBBBBB;

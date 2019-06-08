@@ -1,0 +1,17 @@
+version 1;
+bid 25aad5f9-0797-4daf-91dc-c5a70b887a7f;
+id industrialforegoing;
+name "Industrial Foregoing";
+icon "http://dccg.herokuapp.com/cfproject/266515/avatar";
+description "Texture fixes for Industrial Foregoing";
+authors ["Zeitheron"];
+require mod "industrialforegoing";
+
+const machines: "industrialforegoing:textures/gui/machines.png";
+
+in $machines color #ADADAD -> #3D4044;
+in $machines exclude rectX256(78, 1, 31, 31);
+in $machines exclude rectX256(1, 214, 151, 18);
+in $machines exclude rectX256(1, 72, 15, 31);
+
+text transform in com.buuz135.industrial.gui.*;

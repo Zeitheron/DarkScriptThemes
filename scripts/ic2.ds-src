@@ -1,17 +1,11 @@
 version 1;
 bid 900ee9b9-17a1-49c2-81ab-40dbc554ef41;
 id ic2;
-name "Industrial Craft 2";
-description "Small fixes for IC2 noising issues.";
+name "Light Industrial Craft 2";
+description "Disable IC2's GUIs";
 icon "http://dccg.herokuapp.com/cfproject/242638/avatar";
-authors ["Zeitheron"];
+authors ["Zeitheron", "Goldenpants21"];
 require mod "ic2";
 
-text transform in ic2.*;
-
-color #909090 -> #373A3F;
-color #EDEDED -> #54575B;
-color #FBFBFB -> #5D6166;
-color #FEFEFE -> #5D6166;
-color #8C8C8C -> #35383D;
-color #7E7E7E -> #383B3F;
+#Disable ic2
+exclude ic2:*;

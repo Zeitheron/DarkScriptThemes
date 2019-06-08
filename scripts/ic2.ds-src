@@ -2,8 +2,8 @@ version 1;
 bid 900ee9b9-17a1-49c2-81ab-40dbc554ef41;
 id ic2;
 name "Industrial Craft 2";
-icon "http://dccg.herokuapp.com/cfproject/242638/avatar";
 description "Small fixes for IC2 noising issues.";
+icon "http://dccg.herokuapp.com/cfproject/242638/avatar";
 authors ["Zeitheron"];
 require mod "ic2";
 

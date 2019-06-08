@@ -2,8 +2,8 @@ version 1;
 bid deb36aa4-8eec-466a-a6db-2db7e44cec4c;
 id refinedstorage;
 name "Refined Storage";
-icon "http://dccg.herokuapp.com/cfproject/243076/avatar";
 description "Fix some coloring issues with Refined Storage";
+icon "http://dccg.herokuapp.com/cfproject/243076/avatar";
 authors ["Zeitheron"];
 require mod "refinedstorage";
 

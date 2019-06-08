@@ -1,8 +1,8 @@
 version 1;
 bid f8000f28-68a8-4f54-aadc-86ae44f343f4;
 id extrautils2;
-description "Adds support for Extra Utilities 2 GUIs.";
 name "Extra Utilities 2";
+description "Adds support for Extra Utilities 2 GUIs.";
 icon "http://dccg.herokuapp.com/cfproject/225561/avatar";
 authors ["Zeitheron"];
 require mod "extrautils2";

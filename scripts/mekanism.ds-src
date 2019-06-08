@@ -2,8 +2,8 @@ version 1;
 bid 6d387197-a988-4e92-937f-0d744f3c6e36;
 id mekanism;
 name "Mekanism";
-icon "http://dccg.herokuapp.com/cfproject/268560/avatar";
 description "Provide support for Mekanism.";
+icon "http://dccg.herokuapp.com/cfproject/268560/avatar";
 authors ["Zeitheron"];
 require mod "mekanism";
 

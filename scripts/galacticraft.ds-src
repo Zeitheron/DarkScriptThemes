@@ -1,0 +1,69 @@
+version 1;
+bid 071e08bf-0460-4766-9738-af4db8bdcb2d;
+id galacticraft;
+name "Galacticraft";
+icon "https://micdoodle8.com/images/icons/galacticraft.png";
+description "Small fixes for Galacticraft's GUIs.";
+authors ["Goldenpants21"];
+
+#Oxygen Distributer
+color #737373 -> #303236;
+
+#Disable planets
+exclude galacticraftcore:textures/gui/celestialbodies/*
+
+#Refinery
+in "galacticraftcore:textures/gui/refinery.png" exclude rectX256(6, 27, 18, 40);
+in "galacticraftcore:textures/gui/refinery.png" exclude rectX256(152, 27, 18, 40);
+in "galacticraftcore:textures/gui/refinery_recipe.png" exclude rectX256(42, 27, 18, 40);
+in "galacticraftcore:textures/gui/refinery_recipe.png" exclude rectX256(116, 27, 18, 40);
+
+#Text fixes
+text transform in micdoodle8.mods.galacticraft.core.client.gui.container.*;
+text transform in micdoodle8.mods.galacticraft.core.client.gui.element.*;
+text transform in micdoodle8.mods.galacticraft.planets.mars.client.gui.*;
+
+#Fuel Loader
+in "galacticraftcore:textures/gui/fuel_loader.png" exclude rectX256(6, 27, 18, 40);
+color #BFBFBF -> #4A4D54;
+
+#Cargo Loader
+color #A0A0A0 -> #4A4D54;
+color #A7A7A7 -> #4A4D54;
+color #B0B0B0 -> #4A4D54;
+color #B7B7B7 -> #4A4D54;
+color #C4C4C4 -> #4A4D54;
+
+#NASA Workbench (Bugs)
+const schematicpage: "galacticraftcore:textures/gui/schematicpage.png";
+in $schematicpage exclude rectX256(59, 16, 57, 11);
+in $schematicpage exclude rectX256(59, 45, 57, 11);
+in $schematicpage exclude rectX256(59, 27, 20, 18);
+in $schematicpage exclude rectX256(97, 27, 19, 18);
+
+#Terraformer (Bug)
+
+#Buggy ALL
+in "galacticraftcore:textures/gui/buggy_0.png" exclude rectX256(71, 6, 35, 39);
+in "galacticraftcore:textures/gui/buggy_18.png" exclude rectX256(71, 6, 35, 39);
+in "galacticraftcore:textures/gui/buggy_36.png" exclude rectX256(71, 6, 35, 39);
+in "galacticraftcore:textures/gui/buggy_54.png" exclude rectX256(71, 6, 35, 39);
+
+#Chest ALL
+in "galacticraftcore:textures/gui/chest_0.png" exclude rectX256(16, 17, 35, 29);
+in "galacticraftcore:textures/gui/chest_18.png" exclude rectX256(16, 55, 35, 29);
+in "galacticraftcore:textures/gui/chest_36.png" exclude rectX256(16, 91, 35, 29);
+in "galacticraftcore:textures/gui/chest_54.png" exclude rectX256(16, 127, 35, 29);
+
+#Rocket ALL
+color #C3C3C3 -> #4A4D54;
+in "galacticraftcore:textures/gui/rocket_0.png" exclude rectX256(70, 6, 35, 39);
+in "galacticraftcore:textures/gui/rocket_18.png" exclude rectX256(71, 6, 35, 39);
+in "galacticraftcore:textures/gui/rocket_36.png" exclude rectX256(71, 6, 35, 39);
+in "galacticraftcore:textures/gui/rocket_54.png" exclude rectX256(71, 6, 35, 39);
+
+#Gas Liquefier (Bug)
+
+#Methane Synthesizer (Bug)
+
+#Water Electrolyzer (Bug)

@@ -1,0 +1,12 @@
+version 1;
+bid b57383d3-1c39-4576-a1bc-996b19dbed7a;
+id avaritia;
+name "Avaritia";
+icon "http://dccg.herokuapp.com/cfproject/261348/avatar";
+description "JEI and NEI fixes for Avaritia";
+authors ["Zeitheron"];
+
+const extreme: avaritia:textures/gui/extreme;
+
+exclude $extreme_jei.png;
+exclude $extreme_nei.png;

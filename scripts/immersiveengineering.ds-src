@@ -1,0 +1,9 @@
+version 1;
+bid 9c90b20b-4b81-42b2-aa1d-8afe8ac62ab0;
+id immersiveengineering;
+name "Immersive Engineering Fix";
+icon "http://dccg.herokuapp.com/cfproject/231951/avatar";
+description "Fixes IE's GUI textures";
+authors ["Zeitheron"];
+
+exclude immersiveengineering:*;

@@ -1,0 +1,10 @@
+version 1;
+bid f28e8119-be96-46d4-bdde-c07a0cb88f50;
+id tconstruct;
+name "Tinkers' Construct";
+icon "http://dccg.herokuapp.com/cfproject/74072/avatar";
+description "Small text fixes for Tinkers' Construct";
+authors ["Zeitheron"];
+
+#Text fixes
+text transform in slimeknights.mantle.client.gui.*;

@@ -1,0 +1,22 @@
+version 1;
+bid df32318c-4cdb-471e-9f1a-9eb913ae467b;
+id quark;
+name "Quark";
+description "This is the default dark style for Quark";
+icon "http://dccg.herokuapp.com/cfproject/243121/avatar";
+authors ["WenXin2"];
+
+# Include all GUI textures.
+include quark:textures/misc/backpack_gui.png
+include quark:textures/misc/matrix_enchanting.png
+include quark:textures/misc/noteblock.png
+include quark:textures/misc/shulker_widget.png
+
+#Matrix Enchanting
+in "quark:textures/misc/matrix_enchanting.png" exclude rectX256(0, 166, 91, 47);
+
+#Noteblock
+in "quark:textures/misc/noteblock.png" exclude rectX256(0, 102, 159, 16);
+
+# Texture Includes for Quark Search Bar
+in "quark:textures/misc/general_icons.png" include rectX256(0, 244, 90, 12);

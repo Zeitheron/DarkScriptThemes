@@ -13,6 +13,10 @@ include *:gui/*
 include *:textures/guis/*
 include *:guis/*
 
+const anvil: "minecraft:textures/gui/container/anvil.png";
+const recipe_book: "minecraft:textures/gui/recipe_book.png";
+const villager: "minecraft:textures/gui/container/villager.png";
+
 exclude minecraft:textures/gui/bars.png
 exclude minecraft:textures/gui/icons.png
 exclude minecraft:textures/gui/resource_packs.png
@@ -36,23 +40,30 @@ color #E7FBFF -> #64686D;
 # Texture Excludes
 in "minecraft:textures/gui/container/inventory.png" exclude rectX256(0, 166, 256, 90);
 
-in "minecraft:textures/gui/container/anvil.png" exclude rectX256(31, 7, 2, 2);
-in "minecraft:textures/gui/container/anvil.png" exclude rectX256(29, 9, 6, 2);
-in "minecraft:textures/gui/container/anvil.png" exclude rectX256(27, 11, 10, 2);
-in "minecraft:textures/gui/container/anvil.png" exclude rectX256(25, 13, 14, 2);
-in "minecraft:textures/gui/container/anvil.png" exclude rectX256(27, 15, 14, 2);
-in "minecraft:textures/gui/container/anvil.png" exclude rectX256(29, 17, 14, 2);
-in "minecraft:textures/gui/container/anvil.png" exclude rectX256(33, 19, 12, 2);
-in "minecraft:textures/gui/container/anvil.png" exclude rectX256(35, 21, 12, 2);
-in "minecraft:textures/gui/container/anvil.png" exclude rectX256(35, 23, 10, 2);
-in "minecraft:textures/gui/container/anvil.png" exclude rectX256(37, 25, 6, 2);
-in "minecraft:textures/gui/container/anvil.png" exclude rectX256(39, 27, 2, 2);
+in $anvil exclude rectX256(31, 7, 2, 2);
+in $anvil exclude rectX256(29, 9, 6, 2);
+in $anvil exclude rectX256(27, 11, 10, 2);
+in $anvil exclude rectX256(25, 13, 14, 2);
+in $anvil exclude rectX256(27, 15, 14, 2);
+in $anvil exclude rectX256(29, 17, 14, 2);
+in $anvil exclude rectX256(33, 19, 12, 2);
+in $anvil exclude rectX256(35, 21, 12, 2);
+in $anvil exclude rectX256(35, 23, 10, 2);
+in $anvil exclude rectX256(37, 25, 6, 2);
+in $anvil exclude rectX256(39, 27, 2, 2);
 
-in "minecraft:textures/gui/recipe_book.png" exclude rectX256(16, 13, 4, 1);
-in "minecraft:textures/gui/recipe_book.png" exclude rectX256(13, 20, 7, 1);
-in "minecraft:textures/gui/recipe_book.png" exclude rectX256(21, 15, 1, 4);
-in "minecraft:textures/gui/recipe_book.png" exclude rectX256(14, 15, 1, 7);
-in "minecraft:textures/gui/recipe_book.png" exclude rectX256(15, 14, 6, 6);
+in $recipe_book exclude rectX256(16, 13, 4, 1);
+in $recipe_book exclude rectX256(13, 20, 7, 1);
+in $recipe_book exclude rectX256(21, 15, 1, 4);
+in $recipe_book exclude rectX256(14, 15, 1, 7);
+in $recipe_book exclude rectX256(15, 14, 6, 6);
+
+in $villager exclude rectX256(177, 2, 10, 15);
+in $villager exclude rectX256(177, 21, 10, 15);
+in $villager exclude rectX256(189, 2, 10, 15);
+in $villager exclude rectX256(189, 21, 10, 15);
+in $villager exclude rectX256(201, 2, 10, 15);
+in $villager exclude rectX256(201, 21, 10, 15);
 
 # Texture Includes
 in "minecraft:textures/gui/container/stats_icons.png" include rectX128(0, 0, 18, 36);

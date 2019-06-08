@@ -1,4 +1,4 @@
-version 3;
+version 4;
 id default;
 name "Default Style";
 icon "http://dccg.herokuapp.com/cfproject/323440/avatar";

@@ -1,0 +1,59 @@
+version 2;
+bid 08c8b0ad-e52c-4b17-ae69-725b8fb715ec;
+id galacticraftplanets;
+name "Galacticraft Planets";
+icon "https://wiki.micdoodle8.com/images/thumb/e/ea/Grid_Earth.png/16px-Grid_Earth.png";
+description "Small fixes for Galacticraft Planets GUIs.";
+authors ["Zeitheron"];
+require mod "galacticraftplanets";
+
+const items: minecraft:textures/items;
+const blocks: minecraft:textures/blocks;
+const guis: galacticraftplanets:textures/gui;
+
+exclude $guis/planets/*;
+
+# Terraformer
+const terraformer: "$guis/terraformer.png";
+
+in $terraformer exclude rectX256(55, 17, 41, 28);
+in $terraformer color #B6B6B6 -> #414449;
+
+in $terraformer fill color #414449 within rectX256(7, 18, 16, 16);
+in $terraformer fill color #414449 within rectX256(7, 63, 16, 16);
+in $terraformer fill color #414449 within rectX256(6, 86, 16, 16);
+in $terraformer fill color #414449 within rectX256(7, 111, 16, 16);
+
+from rect(0, 0, 1, 1) of "$items/bucket_water.png" render to $terraformer within rectX256(7, 18, 16, 16);
+from rect(0, 0, 1, 1) of "$items/dye_powder_white.png" render to $terraformer within rectX256(7, 63, 16, 16);
+from rect(0, 0, 1, 1) of "$blocks/sapling_oak.png" render to $terraformer within rectX256(6, 86, 16, 16);
+from rect(0, 0, 1, 1) of "$items/seeds_wheat.png" render to $terraformer within rectX256(7, 111, 16, 16);
+
+# Gas Liquefier & Water Electrolyzer
+const gliq: "$guis/gas_liquefier.png"
+
+in $gliq exclude rectX256(6, 27, 18, 40);
+in $gliq exclude rectX256(131, 27, 18, 40);
+in $gliq exclude rectX256(152, 27, 18, 40);
+
+const gliq: "$guis/gas_liquefier_recipe.png"
+
+in $gliq exclude rectX256(42, 27, 18, 40);
+in $gliq exclude rectX256(107, 27, 18, 40);
+in $gliq exclude rectX256(126, 27, 18, 40);
+
+# Methane Synthesizer
+const msynth: "$guis/methane_synthesizer.png";
+
+in $msynth exclude rectX256(6, 27, 18, 40);
+in $msynth exclude rectX256(27, 27, 18, 22);
+in $msynth exclude rectX256(152, 27, 18, 40);
+
+const msynth: "$guis/methane_synthesizer_recipe.png";
+
+in $msynth exclude rectX256(31, 27, 18, 40);
+in $msynth exclude rectX256(52, 27, 18, 22);
+in $msynth exclude rectX256(116, 27, 18, 40);
+
+in "$guis/slimeling_panel0.png" exclude rectX256(176, 9, 18, 18);
+in "$guis/slimeling_panel2.png" exclude rectX256(176, 27, 18, 18);

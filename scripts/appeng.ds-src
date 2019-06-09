@@ -18,6 +18,7 @@ const guis: appliedenergistics2:textures/guis;
 in "$guis/states.png" include rectX256(176, 0, 80, 256);
 in "$guis/states.png" include rectX256(48, 32, 128, 16);
 in "$guis/states.png" include rectX256(0, 160, 96, 16);
+in "$guis/states.png" include rectX256(0, 64, 16, 16);
 
 in "$guis/states.png" color #878787 -> #303338;
 in "$guis/states.png" color #E5E5E5 -> #64686D;

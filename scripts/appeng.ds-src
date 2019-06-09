@@ -29,3 +29,4 @@ in "$guis/networkstatus.png" color #D1D1D1 -> #565960;
 
 color #383838 -> #151719;
 color #545454 -> #151719;
+color #AFAFAF -> #45484C;

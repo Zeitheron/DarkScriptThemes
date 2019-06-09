@@ -1,10 +1,11 @@
-version 1;
+version 2;
 bid 071e08bf-0460-4766-9738-af4db8bdcb2d;
 id galacticraft;
 name "Galacticraft";
 icon "https://micdoodle8.com/images/icons/galacticraft.png";
 description "Small fixes for Galacticraft's GUIs.";
 authors ["Goldenpants21"];
+require mod "galacticraftcore";
 
 #Oxygen Distributer
 color #737373 -> #303236;
@@ -34,14 +35,12 @@ color #B0B0B0 -> #4A4D54;
 color #B7B7B7 -> #4A4D54;
 color #C4C4C4 -> #4A4D54;
 
-#NASA Workbench (Bugs)
+#NASA Workbench
 const schematicpage: "galacticraftcore:textures/gui/schematicpage.png";
 in $schematicpage exclude rectX256(59, 16, 57, 11);
 in $schematicpage exclude rectX256(59, 45, 57, 11);
 in $schematicpage exclude rectX256(59, 27, 20, 18);
 in $schematicpage exclude rectX256(97, 27, 19, 18);
-
-#Terraformer (Bug)
 
 #Buggy ALL
 in "galacticraftcore:textures/gui/buggy_0.png" exclude rectX256(71, 6, 35, 39);
@@ -61,9 +60,3 @@ in "galacticraftcore:textures/gui/rocket_0.png" exclude rectX256(70, 6, 35, 39);
 in "galacticraftcore:textures/gui/rocket_18.png" exclude rectX256(71, 6, 35, 39);
 in "galacticraftcore:textures/gui/rocket_36.png" exclude rectX256(71, 6, 35, 39);
 in "galacticraftcore:textures/gui/rocket_54.png" exclude rectX256(71, 6, 35, 39);
-
-#Gas Liquefier (Bug)
-
-#Methane Synthesizer (Bug)
-
-#Water Electrolyzer (Bug)

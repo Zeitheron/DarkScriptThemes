@@ -10,7 +10,6 @@ require mod "teslacorelib";
 const basic-machine: "teslacorelib:textures/gui/basic-machine.png";
 
 in $basic-machine exclude rectX256(146, 226, 86, 16);
-in $basic-machine exclude rectX256(110, 210, 32, 14);
 in $basic-machine color #CDD3D3 -> #35383D;
 in $basic-machine color #ADADAD -> #3D4044;
 in $basic-machine color #6B6B6B -> #35383D;

@@ -7,11 +7,35 @@ description "Texture fixes for Industrial Foregoing";
 authors ["Zeitheron"];
 require mod "industrialforegoing";
 
+const items: minecraft:textures/items;
+const blocks: minecraft:textures/blocks;
 const machines: "industrialforegoing:textures/gui/machines.png";
 
 in $machines color #ADADAD -> #3D4044;
-in $machines exclude rectX256(78, 1, 31, 31);
+in $machines color #FFFFFE -> #64686D;
+in $machines color #FEFEFE -> #64686D;
+in $machines color #FDFDFD -> #64686D;
+in $machines color #FEFEFD -> #64686D;
+in $machines color #FDFDFC -> #64686D;
+in $machines color #FDFDFB -> #64686D;
+in $machines color #FEFEFC -> #64686D;
 in $machines exclude rectX256(1, 214, 151, 18);
 in $machines exclude rectX256(1, 72, 15, 31);
+
+in $machines color #373737 -> #151719;
+in $machines color #393937 -> #151719;
+in $machines color #373738 -> #151719;
+in $machines color #383839 -> #151719;
+in $machines color #383838 -> #151719;
+in $machines color #363637 -> #151719;
+in $machines color #383837 -> #151719;
+in $machines color #3A3A3A -> #151719;
+in $machines color #373739 -> #151719;
+
+in $machines fill color #3D4044 within rectX256(79, 2, 12, 12);
+in $machines fill color #3D4044 within rectX256(79, 18, 12, 12);
+
+from rect(0, 0, 1, 1) of "$items/snowball.png" render to $machines within rectX256(77, 0, 16, 16);
+from rect(0, 0, 1, 1) of "$items/slimeball.png" render to $machines within rectX256(77, 16, 16, 16);
 
 text transform in com.buuz135.industrial.gui.*;

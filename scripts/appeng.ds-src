@@ -1,4 +1,4 @@
-version 1;
+version 2;
 bid 1562a81b-704b-413a-a311-3c34d6c2d3d0;
 id appeng;
 name "Applied Energistics 2";
@@ -12,3 +12,19 @@ include appliedenergistics2:textures/guis/*;
 
 # Let text recoloring in any AE2 gui
 text transform in appeng.client.gui.implementations.*;
+
+const guis: appliedenergistics2:textures/guis;
+
+in "$guis/states.png" include rectX256(176, 0, 80, 256);
+in "$guis/states.png" include rectX256(48, 32, 128, 16);
+in "$guis/states.png" include rectX256(0, 160, 96, 16);
+
+in "$guis/states.png" color #878787 -> #303338;
+in "$guis/states.png" color #E5E5E5 -> #64686D;
+in "$guis/states.png" color #444444 -> #151719;
+in "$guis/states.png" color #404040 -> #BBBBBB;
+
+in "$guis/networkstatus.png" color #D1D1D1 -> #565960;
+
+color #383838 -> #151719;
+color #545454 -> #151719;

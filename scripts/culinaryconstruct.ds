@@ -1,0 +1,29 @@
+version 1;
+bid 7233e119-c9ae-443f-b1bc-42474c8b3ad8;
+id culinaryconstruct;
+name "Culinary Construct";
+description "This fixes the knife icon for Culinary Construct";
+icon "http://dccg.herokuapp.com/cfproject/296676/avatar";
+authors ["WenXin2"];
+require mod "culinaryconstruct";
+
+const sandwich_station: "culinaryconstruct:textures/gui/gui_sandwich_station.png";
+
+#Sandwich Station
+in $sandwich_station exclude rectX256(39, 13, 2, 4);
+in $sandwich_station exclude rectX256(37, 15, 2, 4);
+in $sandwich_station exclude rectX256(35, 17, 2, 4);
+in $sandwich_station exclude rectX256(33, 19, 2, 4);
+in $sandwich_station exclude rectX256(31, 21, 2, 4);
+in $sandwich_station exclude rectX256(29, 23, 2, 4);
+in $sandwich_station exclude rectX256(27, 25, 2, 2);
+
+# Sandwich Station Bar textures:
+in $sandwich_station color #A09172 -> #605745;
+in $sandwich_station color #E0CA9F -> #B9A683;
+
+in $sandwich_station color #4E4737 -> #353026;
+in $sandwich_station color #6D634D -> #645A46;
+
+# Darken Sandwich icon in the Sandwich Station:
+in $sandwich_station color #686868 -> #212121;

@@ -34,3 +34,5 @@ in $hud color #7A7A7A -> #292B2D;
 in $hud color #858585 -> #292B2E;
 in $hud color #737373 -> #26282A;
 in $hud color #777777 -> #282A2C;
+
+in $hud include rectX256(190, 0, 66, 40);

@@ -1,10 +1,11 @@
-version 1;
+version 2;
 bid df32318c-4cdb-471e-9f1a-9eb913ae467b;
 id quark;
 name "Quark";
 description "This is the default dark style for Quark";
 icon "http://dccg.herokuapp.com/cfproject/243121/avatar";
 authors ["WenXin2"];
+require mod "quark";
 
 # Include all GUI textures.
 include quark:textures/misc/backpack_gui.png

@@ -5,6 +5,7 @@ name "Tinkers' Construct";
 icon "http://dccg.herokuapp.com/cfproject/74072/avatar";
 description "Small text fixes for Tinkers' Construct";
 authors ["Zeitheron"];
+require mod "tconstruct";
 
 #Text fixes
 text transform in slimeknights.mantle.client.gui.*;

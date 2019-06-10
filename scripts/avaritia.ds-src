@@ -5,6 +5,7 @@ name "Avaritia";
 icon "http://dccg.herokuapp.com/cfproject/261348/avatar";
 description "JEI and NEI fixes for Avaritia";
 authors ["Zeitheron"];
+require mod "avaritia";
 
 const extreme: avaritia:textures/gui/extreme;
 

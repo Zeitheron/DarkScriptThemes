@@ -5,5 +5,6 @@ name "Immersive Engineering Fix";
 icon "http://dccg.herokuapp.com/cfproject/231951/avatar";
 description "Fixes IE's GUI textures";
 authors ["Zeitheron"];
+require mod "immersiveengineering";
 
 exclude immersiveengineering:*;

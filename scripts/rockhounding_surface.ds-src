@@ -1,0 +1,161 @@
+version 1;
+bid 2e71891c-32bc-4d92-ac23-4c1b0193a587;
+id rockhounding_surface;
+name "Rockhounding Surface";
+description "Tweaks to the default dark style for Rockhounding Surface";
+icon "http://dccg.herokuapp.com/cfproject/256072/avatar";
+authors ["WenXin2"];
+require mod "rockhounding_surface";
+
+const jeicompostbin: "rockhounding_surface:textures/gui/jei/jeicompostbin.png";
+const guicompostbin: "rockhounding_surface:textures/gui/guicompostbin.png";
+const truffleauction: "rockhounding_surface:textures/gui/guitruffleauction.png";
+const vivarium: "rockhounding_surface:textures/gui/guivivarium.png";
+const woodincubator: "rockhounding_surface:textures/gui/guiwoodincubator.png";
+
+#Compost Bin for JEI
+in $jeicompostbin exclude rectX256(0, 18, 18, 42);
+in $jeicompostbin exclude rectX256(18, 0, 42, 60);
+
+#Compost Bin
+in $guicompostbin exclude rectX256(4, 4, 151, 14);
+in $guicompostbin exclude rectX256(157, 4, 6, 1);
+in $guicompostbin exclude rectX256(165, 4, 6, 1);
+in $guicompostbin exclude rectX256(156, 5, 16, 12);
+in $guicompostbin exclude rectX256(162, 17, 4, 1);
+in $guicompostbin exclude rectX256(176, 0, 40, 50);
+
+#Truffle Auction
+in $truffleauction exclude rectX256(4, 4, 151, 14);
+in $truffleauction exclude rectX256(157, 4, 6, 1);
+in $truffleauction exclude rectX256(165, 4, 6, 1);
+in $truffleauction exclude rectX256(156, 5, 16, 12);
+in $truffleauction exclude rectX256(162, 17, 4, 1);
+in $truffleauction exclude rectX256(43, 60, 3, 7);
+in $truffleauction exclude rectX256(42, 61, 5, 3);
+in $truffleauction exclude rectX256(47, 62, 1, 2);
+in $truffleauction exclude rectX256(46, 64, 1, 3);
+in $truffleauction exclude rectX256(44, 67, 2, 1);
+
+#Vivarium
+in $vivarium exclude rectX256(4, 4, 151, 14);
+in $vivarium exclude rectX256(157, 4, 6, 1);
+in $vivarium exclude rectX256(165, 4, 6, 1);
+in $vivarium exclude rectX256(156, 5, 16, 12);
+in $vivarium exclude rectX256(162, 17, 4, 1);
+in $vivarium exclude rectX256(63, 83, 50, 20);
+
+#Wood Incubator
+in $woodincubator exclude rectX256(4, 4, 151, 14);
+in $woodincubator exclude rectX256(157, 4, 6, 1);
+in $woodincubator exclude rectX256(165, 4, 6, 1);
+in $woodincubator exclude rectX256(156, 5, 16, 12);
+in $woodincubator exclude rectX256(162, 17, 4, 1);
+in $woodincubator exclude rectX256(176, 9, 18, 18);
+in $woodincubator exclude rectX256(176, 66, 14, 14);
+in $woodincubator exclude rectX256(137, 22, 32, 16);
+in $woodincubator exclude rectX256(60, 53, 6, 14);
+in $woodincubator exclude rectX256(106, 53, 2, 2);
+in $woodincubator exclude rectX256(107, 55, 1, 1);
+in $woodincubator exclude rectX256(120, 63, 1, 2);
+in $woodincubator exclude rectX256(109, 66, 10, 1);
+in $woodincubator exclude rectX256(117, 67, 1, 1);
+in $woodincubator exclude rectX256(7, 22, 16, 16);
+
+# Wood Incubator Block Icon textures:
+in $woodincubator color #565656 -> #262626;
+in $woodincubator color #585858 -> #212121;
+in $woodincubator color #5B5B5B -> #1C1C1C;
+in $woodincubator color #5D5D5D -> #161616;
+in $woodincubator color #5F5F5F -> #141414;
+in $woodincubator color #656565 -> #191919;
+in $woodincubator color #686868 -> #303030;
+in $woodincubator color #6A6A6A -> #222226;
+in $woodincubator color #6E6E6E -> #2B2B2B;
+in $woodincubator color #707070 -> #161616;
+in $woodincubator color #727272 -> #1C1C1C;
+in $woodincubator color #767676 -> #2D2D2D;
+in $woodincubator color #787878 -> #2B2B2B;
+in $woodincubator color #7A7A7A -> #2E3135;
+in $woodincubator color #7E7E7E -> #2A2C30;
+in $woodincubator color #838383 -> #303338;
+in $woodincubator color #8A8A8A -> #303338;
+in $woodincubator color #8C8C8C -> #303338;
+
+in $woodincubator color #2F2F2F -> #262626;
+in $woodincubator color #323232 -> #212121;
+in $woodincubator color #343434 -> #1E1E1E;
+in $woodincubator color #373737 -> #191919;
+in $woodincubator color #393939 -> #141414;
+in $woodincubator color #3C3C3C -> #111111;
+in $woodincubator color #414141 -> #0C0C0C;
+in $woodincubator color #545454 -> #020202;
+in $woodincubator color #4D4D4D -> #1E1E1E;
+in $woodincubator color #6C6C6C -> #212121;
+in $woodincubator color #717171 -> #232323;
+
+# Wood Incubator Balance Icon textures:
+in $truffleauction color #3B3B3B -> #414449;
+in $truffleauction color #57534D -> #414449;
+in $truffleauction color #575757 -> #303235;
+in $truffleauction color #5F5E5D -> #3B3E42;
+in $truffleauction color #615C56 -> #303235;
+in $truffleauction color #636363 -> #292B2D;
+in $truffleauction color #6A6A6A -> #3B3E42;
+in $truffleauction color #706A64 -> #303235;
+in $truffleauction color #7C756D -> #3B3E42;
+in $truffleauction color #7C7C7C -> #414449;
+in $truffleauction color #837D76 -> #292B2D;
+in $truffleauction color #86817C -> #292B2D;
+in $truffleauction color #898887 -> #414449;
+in $truffleauction color #928A80 -> #414449;
+in $truffleauction color #969696 -> #3B3E42;
+in $truffleauction color #9C9388 -> #414449;
+in $truffleauction color #A3998E -> #3B3E42;
+in $truffleauction color #A3A3A3 -> #3B3E42;
+in $truffleauction color #ABABAB -> #414449;
+in $truffleauction color #ADA397 -> #292B2D;
+in $truffleauction color #AFAAA5 -> #303235;
+in $truffleauction color #B1B1B1 -> #3B3E42;
+in $truffleauction color #B7B7B6 -> #414449;
+in $truffleauction color #B8AEA2 -> #3B3E42;
+in $truffleauction color #BCBCBC -> #414449;
+in $truffleauction color #C2B5A7 -> #3B3E42;
+in $truffleauction color #C3C3C3 -> #3B3E42;
+in $truffleauction color #C4BCB1 -> #303235;
+in $truffleauction color #C8C7C5 -> #303235;
+in $truffleauction color #CAC2B7 -> #414449;
+in $truffleauction color #CDBEAC -> #292B2D;
+in $truffleauction color #CDC8C3 -> #414449;
+in $truffleauction color #CFC5BA -> #3B3E42;
+in $truffleauction color #D1CAC2 -> #3B3E42;
+in $truffleauction color #D6CCC0 -> #3B3E42;
+in $truffleauction color #DACEC0 -> #303235;
+in $truffleauction color #DCCBB6 -> #414449;
+in $truffleauction color #DCD1C4 -> #3B3E42;
+in $truffleauction color #DFCFBC -> #414449;
+in $truffleauction color #DFD1BF -> #414449;
+in $truffleauction color #E0D5C7 -> #414449;
+in $truffleauction color #E4D2BE -> #414449;
+in $truffleauction color #E4D8CB -> #292B2D;
+in $truffleauction color #E7D5C0 -> #414449;
+in $truffleauction color #E9D6BF -> #414449;
+in $truffleauction color #E9DCCE -> #3B3E42;
+in $truffleauction color #EAD7BF -> #414449;
+in $truffleauction color #ECE0D2 -> #303235;
+in $truffleauction color #EEDAC2 -> #303235;
+in $truffleauction color #F2DDC4 -> #3B3E42;
+in $truffleauction color #F4E8D9 -> #3B3E42;
+in $truffleauction color #F5E0C7 -> #414449;
+in $truffleauction color #F7E3CB -> #3B3E42;
+in $truffleauction color #F9E5CD -> #292B2D;
+in $truffleauction color #FBE8D1 -> #414449;
+in $truffleauction color #FCEFE0 -> #303235;
+in $truffleauction color #FDEBD6 -> #3B3E42;
+in $truffleauction color #FDECDA -> #303235;
+in $truffleauction color #FEF0DD -> #3B3E42;
+in $truffleauction color #FFF1E1 -> #414449;
+in $truffleauction color #FFF2E3 -> #414449;
+
+in $truffleauction color #A67F7F -> #824141;
+in $truffleauction color #7D9481 -> #417048;

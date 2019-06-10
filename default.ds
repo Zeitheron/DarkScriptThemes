@@ -1,4 +1,4 @@
-version 4;
+version 5;
 id default;
 name "Default Style";
 icon "http://dccg.herokuapp.com/cfproject/323440/avatar";
@@ -12,6 +12,9 @@ include *:textures/gui/*
 include *:gui/*
 include *:textures/guis/*
 include *:guis/*
+
+# Optifine compat
+exclude minecraft:optifine/gui/loading/*
 
 const anvil: "minecraft:textures/gui/container/anvil.png";
 const recipe_book: "minecraft:textures/gui/recipe_book.png";

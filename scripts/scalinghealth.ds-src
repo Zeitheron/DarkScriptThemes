@@ -7,7 +7,8 @@ icon "http://dccg.herokuapp.com/cfproject/248027/avatar";
 authors ["Zeitheron"];
 require mod "scalinghealth";
 
-const hud: rectX256(190, 0, 66, 40) of "scalinghealth:textures/gui/hud.png";
+const htex: "scalinghealth:textures/gui/hud.png";
+const hud: rectX256(190, 0, 66, 40) of $htex;
 
 in $hud color #3F3F3F -> #383A3D;
 in $hud color #282828 -> #0D0E0F;
@@ -35,4 +36,4 @@ in $hud color #858585 -> #292B2E;
 in $hud color #737373 -> #26282A;
 in $hud color #777777 -> #282A2C;
 
-in $hud include rectX256(190, 0, 66, 40);
+in $htex include rectX256(190, 0, 66, 40);

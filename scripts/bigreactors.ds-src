@@ -1,0 +1,26 @@
+version 1;
+bid abfa2f6d-48fb-4874-add2-224b4492c4d3;
+id bigreactors;
+name "Extreme Reactors";
+icon "http://dccg.herokuapp.com/cfproject/250277/avatar";
+description "Fixes for Extreme Reactors";
+authors ["Zeitheron"];
+require mod "bigreactors";
+
+const reactor: "bigreactors:textures/gui/reactorcontroller.png";
+const guiicons: bigreactors:textures/guiicons;
+const items: bigreactors:textures/items;
+
+# Exclude bars
+exclude bigreactors:textures/gui/controls/*;
+
+# Fix reactor colors
+in $reactor color #C4C4C4 -> #4A4D54;
+in $reactor color #B4B4B4 -> #4A4D54;
+in $reactor color #AEAEAE -> #4A4D54;
+in $reactor color #BFBFBF -> #4A4D54;
+
+# Fix wrong yellorium coloring
+in $reactor fill color #4A4D54 within rectX256(131, 3, 18, 18);
+from rectX16(0, 0, 12, 16) of "$items/ingotyellorium.png" render to $reactor within rectX256(131, 3, 12, 16);
+from rect(0, 0, 1, 1) of "$guiicons/temperature.png" render to $reactor within rectX256(137, 4, 16, 16);

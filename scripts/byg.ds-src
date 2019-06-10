@@ -1,0 +1,19 @@
+version 1;
+bid 5815a594-69da-4a5e-8b8e-dcfcd9dfa981;
+id byg;
+name "Oh The Biomes You'll Go";
+description "This adds the default dark style to the GUIs for Oh The Biomes You'll Go";
+icon "http://dccg.herokuapp.com/cfproject/247560/avatar";
+authors ["WenXin2"];
+require mod "byg";
+
+# Include all GUI textures.
+include byg:textures/crategui.png
+include byg:textures/enchanter_gui.png
+include byg:textures/etheraltablegui.png
+include byg:textures/skyforgegui.png
+
+# Default GUI textures:
+color #DDDDDD -> #35383D;
+color #EBEBEB -> #64686D;
+color #EDE3FF -> #151719;

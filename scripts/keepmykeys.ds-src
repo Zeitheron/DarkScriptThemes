@@ -1,0 +1,11 @@
+version 1;
+bid e5446f8a-a473-4d47-a83b-2a286ce4b3e3;
+id keepmykeys;
+name "Keep My Keys";
+description "This fixes the button for Keep My Keys";
+icon "http://dccg.herokuapp.com/cfproject/299476/avatar";
+authors ["WenXin2"];
+require mod "keepmykeys";
+
+#Exclude button from Keep My Keys
+exclude keepmykeys:textures/gui/widgets.png

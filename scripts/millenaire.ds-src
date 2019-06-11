@@ -1,0 +1,16 @@
+version 1;
+bid b00f9647-525f-4e65-a329-88c13c4a749d;
+id millenaire;
+name "Millenaire";
+description "Tweaks to the Default Dark Style for Millenaire";
+icon "http://dccg.herokuapp.com/cfproject/270871/avatar";
+authors ["WenXin2"];
+require mod "millenaire";
+
+#Parchment textures have not been changed/added yet.
+#Parchment textures:
+
+# Default GUI textures for the campfire:
+color #565656 -> #151719;
+color #8C8C8C -> #35383D;
+color #383838 -> #151719;

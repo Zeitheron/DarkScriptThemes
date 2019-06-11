@@ -1,0 +1,30 @@
+version 2;
+bid d4b78102-a542-49a5-8511-589d50618de9;
+id torohud;
+name "Torohud";
+description "This fixes the hud for Torohud";
+icon "http://dccg.herokuapp.com/cfproject/303367/avatar";
+authors ["WenXin2"];
+require mod "torohud";
+
+#Darken the Torohud Mob Health Hud
+const hud: "torohud:textures/gui/default_skin_basic.png";
+
+in $hud color #7A7A7A -> #35363A;
+in $hud color #7E7E7E -> #333438;
+in $hud color #808080 -> #3A3B3F;
+in $hud color #898989 -> #3D3E42;
+in $hud color #848484 -> #36373A;
+in $hud color #939393 -> #393B3F;
+in $hud color #ABABAB -> #3A3B3F;
+in $hud color #CECECE -> #3D3E42;
+
+in $hud color #565656 -> #272B2D;
+in $hud color #5A5A5A -> #272B2D;
+in $hud color #5D5D5D -> #262A2D;
+in $hud color #606060 -> #232628;
+in $hud color #626262 -> #25282B;
+in $hud color #666666 -> #2B3033;
+in $hud color #676767 -> #292D30;
+in $hud color #707070 -> #2B3033;
+in $hud color #737373 -> #2F3538;

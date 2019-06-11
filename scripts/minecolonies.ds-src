@@ -1,0 +1,13 @@
+version 1;
+bid 93cbbcf4-176e-4812-b461-4c7cf442e71d;
+id minecolonies;
+name "Minecolonies";
+description "Tweaks to the Default Dark Style for Minecolonies";
+icon "http://dccg.herokuapp.com/cfproject/245506/avatar";
+authors ["WenXin2"];
+require mod "minecolonies";
+
+exclude minecolonies:textures/gui/colonist_clipboard.png
+
+#Parchment textures have not been changed/added yet.
+#Parchment textures:

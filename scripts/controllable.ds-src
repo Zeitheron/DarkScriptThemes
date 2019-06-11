@@ -1,0 +1,12 @@
+version 1;
+bid 6b8bd428-64d4-4fa0-aee7-82b1d3fb6c8a;
+id controllable;
+name "Controllable";
+description "This fixes the buttons for Controllable";
+icon "http://dccg.herokuapp.com/cfproject/317269/avatar";
+authors ["WenXin2"];
+require mod "controllable";
+
+#Exclude Controllable Buttons 
+exclude controllable:textures/gui/buttons.png
+exclude controllable:textures/gui/controller.png

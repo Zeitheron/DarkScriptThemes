@@ -1,0 +1,11 @@
+version 1;
+bid a04999a2-01d0-490f-aaa9-3d23081dc561;
+id openeye;
+name "OpenEye";
+description "This fixes the button for OpenEye";
+icon "http://dccg.herokuapp.com/cfproject/251457/avatar";
+authors ["WenXin2"];
+require mod "OpenEye";
+
+#Exclude button from OpenEye
+exclude openeye:textures/gui/buttons.png

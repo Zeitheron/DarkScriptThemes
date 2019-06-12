@@ -1,9 +1,14 @@
-version 5;
+version 6;
 id default;
 name "Default Style";
 icon "http://dccg.herokuapp.com/cfproject/323440/avatar";
 description "This is the default dark style";
 authors ["Zeitheron"];
+
+const gui: minecraft:textures/gui;
+const anvil: "$gui/container/anvil.png";
+const recipe_book: "$gui/recipe_book.png";
+const villager: "$gui/container/villager.png";
 
 # Include all GUI textures.
 include *:textures/gui/*
@@ -16,21 +21,18 @@ include *:guis/*
 # Optifine compat
 exclude minecraft:optifine/gui/loading/*
 
-const anvil: "minecraft:textures/gui/container/anvil.png";
-const recipe_book: "minecraft:textures/gui/recipe_book.png";
-const villager: "minecraft:textures/gui/container/villager.png";
-
-exclude minecraft:textures/gui/bars.png
-exclude minecraft:textures/gui/icons.png
-exclude minecraft:textures/gui/resource_packs.png
-exclude minecraft:textures/gui/server_selection.png
-exclude minecraft:textures/gui/spectator_widgets.png
-exclude minecraft:textures/gui/world_selection.png
-exclude minecraft:textures/gui/widgets.png
-exclude minecraft:textures/gui/stream_indicator.png
+exclude $gui/bars.png;
+exclude $gui/icons.png;
+exclude $gui/resource_packs.png;
+exclude $gui/server_selection.png;
+exclude $gui/spectator_widgets.png;
+exclude $gui/world_selection.png;
+exclude $gui/widgets.png;
+exclude $gui/stream_indicator.png;
+exclude $gui/options_background.png;
 
 # Exclude advancements
-exclude minecraft:textures/gui/advancements/backgrounds/*;
+exclude $gui/advancements/backgrounds/*;
 
 # JEI support
 color #D8D8D8 -> #575B60;
@@ -41,7 +43,7 @@ color #999999 -> #232426;
 color #E7FBFF -> #64686D;
 
 # Texture Excludes
-in "minecraft:textures/gui/container/inventory.png" exclude rectX256(0, 166, 256, 90);
+in "$gui/container/inventory.png" exclude rectX256(0, 166, 256, 90);
 
 in $anvil exclude rectX256(31, 7, 2, 2);
 in $anvil exclude rectX256(29, 9, 6, 2);
@@ -69,7 +71,7 @@ in $villager exclude rectX256(201, 2, 10, 15);
 in $villager exclude rectX256(201, 21, 10, 15);
 
 # Texture Includes
-in "minecraft:textures/gui/container/stats_icons.png" include rectX128(0, 0, 18, 36);
+in "$gui/container/stats_icons.png" include rectX128(0, 0, 18, 36);
 
 # Default GUI textures:
 color #FFFFFF -> #64686D;

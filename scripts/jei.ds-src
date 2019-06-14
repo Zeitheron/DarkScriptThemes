@@ -1,0 +1,10 @@
+version 1;
+bid 5d647baa-0458-4175-89f4-0efc01e824c8;
+id jei;
+name "Just Enough Items";
+description "Fixed buttons for JEI!";
+icon "http://dccg.herokuapp.com/cfproject/238222/avatar";
+authors ["Zeitheron"];
+require mod "jei";
+
+in "jei:textures" exclude rect(0, 100 / 128, 80 / 256, 20 / 128);

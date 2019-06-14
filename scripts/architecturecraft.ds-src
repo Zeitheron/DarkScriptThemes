@@ -1,0 +1,23 @@
+version 1;
+bid 179cc126-b5cf-4795-9165-4e67686b43c2;
+id architecturecraft;
+name "ArchitectureCraft";
+description "Tweaks to the Default Dark Style for ArchitectureCraft";
+icon "http://dccg.herokuapp.com/cfproject/277631/avatar";
+authors ["WenXin2"];
+require mod "architecturecraft";
+
+const sawbench: "architecturecraft:textures/gui/gui_sawbench.png";
+
+#Exclude icons:
+exclude architecturecraft:textures/gui/shapemenu_items.png
+exclude architecturecraft:textures/gui/shapes.png
+
+#Fix the Sawbench:
+in $sawbench color #B9B9B9 -> #4A4D54;
+in $sawbench color #333333 -> #151719;
+in $sawbench color #E6E6E6 -> #64686D;
+in $sawbench color #808080 -> #35383D;
+in $sawbench color #666666 -> #35383D;
+in $sawbench color #999999 -> #35383D;
+in $sawbench color #8D8D8D -> #35383D;

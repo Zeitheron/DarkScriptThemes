@@ -1,0 +1,11 @@
+version 1;
+bid 2b66234c-e89b-47b2-a2a9-38b240125245;
+id xaeroworldmap;
+name "Xaero's World Map";
+description "Tweaks to the Default Dark Style for Xaero's World Map";
+icon "http://dccg.herokuapp.com/cfproject/317780/avatar";
+authors ["WenXin2"];
+require mod "xaeroworldmap";
+
+#Excludes arrows and dots on the map
+exclude xaeroworldmap:gui/gui.png;

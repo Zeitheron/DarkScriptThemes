@@ -1,0 +1,376 @@
+version 1;
+bid ae4c4e52-afde-4b7c-b6a5-c7acb9070877;
+id cfm;
+name "MrCrayfish's Furniture Mod";
+description "Tweaks to the Default Dark Style for MrCrayfish's Furniture Mod";
+icon "http://dccg.herokuapp.com/cfproject/55438/avatar";
+authors ["WenXin2"];
+require mod "cfm";
+
+exclude cfm:textures/gui/envelope.png
+exclude cfm:textures/gui/icons.png
+
+const bedside_cabinet_acacia: "cfm:textures/gui/bedside_cabinet_acacia.png";
+const bedside_cabinet_birch: "cfm:textures/gui/bedside_cabinet_birch.png";
+const bedside_cabinet_jungle: "cfm:textures/gui/bedside_cabinet_jungle.png";
+const bedside_cabinet_oak: "cfm:textures/gui/bedside_cabinet_oak.png";
+const bedside_cabinet_spruce: "cfm:textures/gui/bedside_cabinet_spruce.png";
+const bin: "cfm:textures/gui/bin.png";
+const cabinet_acacia: "cfm:textures/gui/cabinet_acacia.png";
+const cabinet_birch: "cfm:textures/gui/cabinet_birch.png";
+const cabinet_jungle: "cfm:textures/gui/cabinet_jungle.png";
+const cabinet_oak: "cfm:textures/gui/cabinet_oak.png";
+const cabinet_spruce: "cfm:textures/gui/cabinet_spruce.png";
+const computer: "cfm:textures/gui/computer.png";
+const dishwasher: "cfm:textures/gui/dishwasher.png";
+const eski: "cfm:textures/gui/eski.png";
+const freezer: "cfm:textures/gui/freezer.png";
+const fridge: "cfm:textures/gui/fridge.png";
+const kitchen_cabinet: "cfm:textures/gui/kitchen_cabinet.png";
+const mailbox: "cfm:textures/gui/mailbox.png";
+const microwave: "cfm:textures/gui/microwave.png";
+const oven: "cfm:textures/gui/oven.png";
+const printer: "cfm:textures/gui/printer.png";
+const wall_cabinet: "cfm:textures/gui/wallcabinet.png";
+const washing_machine: "cfm:textures/gui/washingmachine.png";
+
+#Excludes the white bit of the crown
+in $washing_machine exclude rectX256(117, 113, 7, 1);
+in $dishwasher exclude rectX256(117, 113, 7, 1);
+in $printer exclude rectX256(99, 33, 7, 1);
+in $oven exclude rectX256(117, 113, 7, 1);
+in $freezer exclude rectX256(122, 43, 7, 1);
+in $microwave exclude rectX256(122, 14, 7, 1);
+
+#Acacia Bedside Cabinet
+in $bedside_cabinet_acacia color #884728 -> #54291A;
+in $bedside_cabinet_acacia color #A05330 -> #6B3321;
+in $bedside_cabinet_acacia color #BA683B -> #91512E;
+in $bedside_cabinet_acacia color #AD5D32 -> #703B20;
+in $bedside_cabinet_acacia color #A15730 -> #60331D;
+in $bedside_cabinet_acacia color #DD7B46 -> #A85D35;
+
+#Birch Bedside Cabinet
+in $bedside_cabinet_birch color #9E8B61 -> #4C422F;
+in $bedside_cabinet_birch color #BFA876 -> #63543D;
+in $bedside_cabinet_birch color #D7CB8D -> #968D63;
+in $bedside_cabinet_birch color #D7C185 -> #827955;
+in $bedside_cabinet_birch color #A59467 -> #63563D;
+in $bedside_cabinet_birch color #EFE29E -> #ADA272;
+
+#Jungle Bedside Cabinet
+in $bedside_cabinet_jungle color #68462F -> #442E1F;
+in $bedside_cabinet_jungle color #7F563A -> #5B3E2A;
+in $bedside_cabinet_jungle color #B1805C -> #91674B;
+in $bedside_cabinet_jungle color #8E6442 -> #6B4C38;
+in $bedside_cabinet_jungle color #725035 -> #513725;
+in $bedside_cabinet_jungle color #D69A6F -> #A07153;
+
+#Oak Bedside Cabinet
+in $bedside_cabinet_oak color #695433 -> #3F311E;
+in $bedside_cabinet_oak color #82673F -> #544129;
+in $bedside_cabinet_oak color #B4905A -> #8E6F47;
+in $bedside_cabinet_oak color #9F844D -> #635030;
+in $bedside_cabinet_oak color #735E39 -> #54442A;
+in $bedside_cabinet_oak color #BC9862 -> #775F3F;
+
+#Spruce Bedside Cabinet
+in $bedside_cabinet_spruce color #443321 -> #261B12;
+in $bedside_cabinet_spruce color #5B442C -> #443221;
+in $bedside_cabinet_spruce color #785836 -> #5B412D;
+in $bedside_cabinet_spruce color #664F2F -> #4C3723;
+in $bedside_cabinet_spruce color #493824 -> #2D2115;
+in $bedside_cabinet_spruce color #997041 -> #705230;
+
+#Acacia Cabinet
+in $cabinet_acacia color #884728 -> #54291A;
+in $cabinet_acacia color #A05330 -> #6B3321;
+in $cabinet_acacia color #BA683B -> #91512E;
+in $cabinet_acacia color #AD5D32 -> #703B20;
+in $cabinet_acacia color #A15730 -> #60331D;
+in $cabinet_acacia color #DD7B46 -> #A85D35;
+
+#Birch Cabinet
+in $cabinet_birch color #9E8B61 -> #4C422F;
+in $cabinet_birch color #BFA876 -> #63543D;
+in $cabinet_birch color #D7CB8D -> #968D63;
+in $cabinet_birch color #D7C185 -> #827955;
+in $cabinet_birch color #A59467 -> #63563D;
+in $cabinet_birch color #EFE29E -> #ADA272;
+
+#Jungle Cabinet
+in $cabinet_jungle color #68462F -> #442E1F;
+in $cabinet_jungle color #7F563A -> #5B3E2A;
+in $cabinet_jungle color #B1805C -> #91674B;
+in $cabinet_jungle color #8E6442 -> #6B4C38;
+in $cabinet_jungle color #725035 -> #513725;
+in $cabinet_jungle color #D69A6F -> #A07153;
+
+#Oak Cabinet
+in $cabinet_oak color #695433 -> #3F311E;
+in $cabinet_oak color #82673F -> #544129;
+in $cabinet_oak color #B4905A -> #8E6F47;
+in $cabinet_oak color #9F844D -> #635030;
+in $cabinet_oak color #735E39 -> #54442A;
+in $cabinet_oak color #BC9862 -> #775F3F;
+
+#Spruce Cabinet
+in $cabinet_spruce color #443321 -> #261B12;
+in $cabinet_spruce color #5B442C -> #443221;
+in $cabinet_spruce color #785836 -> #5B412D;
+in $cabinet_spruce color #664F2F -> #4C3723;
+in $cabinet_spruce color #493824 -> #2D2115;
+in $cabinet_spruce color #997041 -> #705230;
+
+#Fridge
+in $fridge color #004567 -> #003751;
+in $fridge color #DCFDFF -> #AAC0C1;
+in $fridge color #98DDFF -> #6B71AF;
+in $fridge color #5DA2C4 -> #555B89;
+in $fridge color #7ABFE1 -> #527989;
+in $fridge color #448AAB -> #366D87;
+in $fridge color #064C6E -> #004260;
+
+#Freezer
+in $freezer color #686868 -> #3A3A3A;
+in $freezer color #7F7F7F -> #2C3135;
+in $freezer color #9A9A9A -> #151719;
+in $freezer color #A5A5A5 -> #000000;
+in $freezer color #A8A5A4 -> #151719;
+in $freezer color #BCBCBC -> #35383D;
+in $freezer color #C6C3C2 -> #35383D;
+in $freezer color #D8D8D8 -> #151719;
+in $freezer color #D9D9D9 -> #1B1E21;
+in $freezer color #DBDBDB -> #414449;
+in $freezer color #E2E2E2 -> #64686D;
+in $freezer color #EAEAEA -> #4A4D54;
+
+#Oven
+in $oven color #686868 -> #3A3A3A;
+in $oven color #7F7F7F -> #2C3135;
+in $oven color #9A9A9A -> #151719;
+in $oven color #A5A5A5 -> #000000;
+in $oven color #A8A5A4 -> #151719;
+in $oven color #BCBCBC -> #35383D;
+in $oven color #C6C3C2 -> #35383D;
+in $oven color #D8D8D8 -> #151719;
+in $oven color #D9D9D9 -> #1B1E21;
+in $oven color #DBDBDB -> #414449;
+in $oven color #E2E2E2 -> #64686D;
+in $oven color #EAEAEA -> #4A4D54;
+in $oven color #CECECE -> #313338;
+
+#Mailbox
+in $mailbox color #918165 -> #776A53;
+in $mailbox color #68583D -> #544631;
+in $mailbox color #271200 -> #190B00;
+in $mailbox color #56421D -> #443417;
+in $mailbox color #BCA883 -> #A08E70;
+in $mailbox color #8B7752 -> #776546;
+
+#Computer
+in $computer color #8E8E8E -> #35383D;
+in $computer color #B2B2B2 -> #2E3135;
+in $computer color #F2F2F2 -> #646870;
+in $computer color #A9A9A9 -> #42464C;
+
+#Printer
+in $printer color #262626 -> #0F0F0F;
+in $printer color #BEBEBE -> #54575B;
+in $printer color #6C6C6C -> #151719;
+in $printer color #828282 -> #2D2F33;
+in $printer color #A5A5A5 -> #000000;
+in $printer color #686868 -> #151719;
+in $printer color #A8A5A4 -> #151719;
+in $printer color #ADADAD -> #151719;
+in $printer color #BCBCBC -> #35383D;
+in $printer color #C6C3C2 -> #35383D;
+in $printer color #D8D8D8 -> #151719;
+in $printer color #D9D9D9 -> #1B1E21;
+in $printer color #DBDBDB -> #414449;
+in $printer color #E2E2E2 -> #64686D;
+in $printer color #EAEAEA -> #4A4D54;
+in $printer color #CECECE -> #313338;
+in $printer color #FFB600 -> #FFB600;
+
+#Wall Cabinet
+#This one looks a little odd because it uses a gradient in its texture, 
+#couldn't find a better way to do it.
+in $wall_cabinet color #A5A5A5 -> #3A3A3A;
+in $wall_cabinet color #B5B5B5 -> #444444;
+in $wall_cabinet color #BCBCBC -> #474747;
+in $wall_cabinet color #8B8B8B -> #35383D;
+in $wall_cabinet color #909090 -> #373A3F;
+in $wall_cabinet color #929292 -> #373A3F;
+in $wall_cabinet color #959595 -> #383B3F;
+in $wall_cabinet color #9A9A9A -> #3B3E42;
+in $wall_cabinet color #9D9D9D -> #3B3E42;
+in $wall_cabinet color #A4A4A4 -> #3C3E42;
+in $wall_cabinet color #A7A7A7 -> #3C3E42;
+in $wall_cabinet color #AAAAAA -> #3E4044;
+in $wall_cabinet color #ACACAC -> #3E4044;
+in $wall_cabinet color #B0B0B0 -> #393B3F;
+in $wall_cabinet color #B1B1B1 -> #393B3F;
+in $wall_cabinet color #B3B3B3 -> #393B3F;
+in $wall_cabinet color #B7B7B7 -> #3D3F44;
+in $wall_cabinet color #BBBBBB -> #414349;
+in $wall_cabinet color #BDBDBD -> #414349;
+in $wall_cabinet color #BFBFBF -> #414349;
+in $wall_cabinet color #C3C3C3 -> #46484F;
+in $wall_cabinet color #C5C5C5 -> #46484F;
+in $wall_cabinet color #C6C6C6 -> #4A4D54;
+in $wall_cabinet color #E1E1E1 -> #585B63;
+
+#Trash Bin
+in $bin color #B3B3B3 -> #64686D;
+in $bin color #8B8B8B -> #35383D;
+in $bin color #3C3C3C -> #0E1011;
+in $bin color #272727 -> #0E1011;
+in $bin color #616161 -> #232528;
+
+#Microwave
+#This one looks a little odd because it uses a gradient in its texture
+in $microwave color #D8D8D8 -> #151719;
+in $microwave color #EAEAEA -> #4A4D54;
+in $microwave color #A5A5A5 -> #000000;
+in $microwave color #B2B2B2 -> #202123;
+in $microwave color #FFFFFF -> #64686D;
+in $microwave color #F2F2F2 -> #54575B;
+in $microwave color #7F7F7F -> #2C3135;
+in $microwave color #9A9A9A -> #151719;
+in $microwave color #DBDBDB -> #414449;
+in $microwave color #919191 -> #1D1E21;
+in $microwave color #929292 -> #1D1E21;
+in $microwave color #939393 -> #1D1E21;
+in $microwave color #949494 -> #1D1E21;
+in $microwave color #969696 -> #1D1E21;
+in $microwave color #989898 -> #1D1E21;
+in $microwave color #9B9B9B -> #1D1E21;
+in $microwave color #9C9C9C -> #1D1E21;
+in $microwave color #9D9D9D -> #1D1E21;
+in $microwave color #A0A0A0 -> #222326;
+in $microwave color #A1A1A1 -> #222326;
+in $microwave color #A2A2A2 -> #222326;
+in $microwave color #A3A3A3 -> #222326;
+in $microwave color #A4A4A4 -> #222326;
+in $microwave color #A6A6A6 -> #222326;
+in $microwave color #A7A7A7 -> #27282B;
+in $microwave color #A8A8A8 -> #27282B;
+in $microwave color #ABABAB -> #27282B;
+in $microwave color #ACACAC -> #27282B;
+in $microwave color #ADADAD -> #27282B;
+in $microwave color #AEAEAE -> #2C2D30;
+in $microwave color #AFAFAF -> #2C2D30;
+in $microwave color #B0B0B0 -> #2C2D30;
+in $microwave color #B4B4B4 -> #2C2D30;
+in $microwave color #B5B5B5 -> #2C2D30;
+in $microwave color #B6B6B6 -> #2C2D30;
+in $microwave color #B7B7B7 -> #2C2D30;
+in $microwave color #B9B9B9 -> #2C2D30;
+in $microwave color #BABABA -> #303135;
+in $microwave color #BBBBBB -> #303135;
+in $microwave color #BCBCBC -> #303135;
+in $microwave color #BDBDBD -> #303135;
+in $microwave color #BEBEBE -> #303135;
+in $microwave color #BFBFBF -> #34363A;
+in $microwave color #C1C1C1 -> #34363A;
+in $microwave color #C2C2C2 -> #34363A;
+in $microwave color #C3C3C3 -> #34363A;
+in $microwave color #C4C4C4 -> #383A3F;
+in $microwave color #C8C8C8 -> #383A3F;
+in $microwave color #C9C9C9 -> #383A3F;
+in $microwave color #CBCBCB -> #383A3F;
+in $microwave color #CCCCCC -> #383A3F;
+in $microwave color #C0C0C0 -> #2C2D30;
+in $microwave color #7F7F7F -> #2C3135;
+in $microwave color #686868 -> #3A3A3A;
+in $microwave color #A8A5A4 -> #151719;
+in $microwave color #BCBCBC -> #35383D;
+in $microwave color #C6C3C2 -> #35383D;
+in $microwave color #D9D9D9 -> #1B1E21;
+in $microwave color #E2E2E2 -> #64686D;
+in $microwave color #CECECE -> #313338;
+
+#Eski
+in $eski color #A5A5A5 -> #151719;
+in $eski color #E1E1E1 -> #51545B;
+in $eski color #D6D6D6 -> #4A4D54;
+in $eski color #BCBCBC -> #27292D;
+in $eski color #E0E0E0 -> #35383D;
+
+#Dishwasher
+#This one looks a little odd because it uses a gradient in its texture
+in $dishwasher color #EAEAEA -> #4A4D54;
+in $dishwasher color #D8D8D8 -> #151719;
+in $dishwasher color #BFBFBF -> #35383D;
+in $dishwasher color #A5A5A5 -> #000000;
+in $dishwasher color #E2E2E2 -> #64686D;
+in $dishwasher color #A8A5A4 -> #151719;
+in $dishwasher color #BCBCBC -> #35383D;
+in $dishwasher color #C6C3C2 -> #35383D;
+in $dishwasher color #7F7F7F -> #2C3135;
+in $dishwasher color #9A9A9A -> #151719;
+in $dishwasher color #DBDBDB -> #414449;
+in $dishwasher color #BFBFBF -> #4A4D54;
+in $dishwasher color #C0C0C0 -> #4A4D54;
+in $dishwasher color #C1C1C1 -> #4A4D54;
+in $dishwasher color #C2C2C2 -> #4A4D54;
+in $dishwasher color #C3C3C3 -> #4A4D54;
+in $dishwasher color #C4C4C4 -> #4A4D54;
+in $dishwasher color #C8C8C8 -> #4A4D54;
+in $dishwasher color #C7C7C7 -> #4A4D54;
+in $dishwasher color #C9C9C9 -> #4A4D54;
+in $dishwasher color #CACACA -> #4A4D54;
+in $dishwasher color #CBCBCB -> #4A4D54;
+in $dishwasher color #CDCDCD -> #4A4D54;
+in $dishwasher color #CECECE -> #4A4D54;
+in $dishwasher color #CFCFCF -> #4A4D54;
+in $dishwasher color #D0D0D0 -> #4A4D54;
+in $dishwasher color #D1D1D1 -> #4A4D54;
+in $dishwasher color #D2D2D2 -> #4A4D54;
+in $dishwasher color #D3D3D3 -> #4A4D54;
+in $dishwasher color #D5D5D5 -> #4A4D54;
+in $dishwasher color #D6D6D6 -> #4A4D54;
+in $dishwasher color #D7D7D7 -> #4A4D54;
+in $dishwasher color #D8D8D8 -> #4A4D54;
+in $dishwasher color #D9D9D9 -> #4A4D54;
+in $dishwasher color #DADADA -> #4A4D54;
+in $dishwasher color #DCDCDC -> #4A4D54;
+in $dishwasher color #DDDDDD -> #4A4D54;
+in $dishwasher color #DEDEDE -> #4A4D54;
+in $dishwasher color #DFDFDF -> #4A4D54;
+in $dishwasher color #E0E0E0 -> #4A4D54;
+in $dishwasher color #E1E1E1 -> #4A4D54;
+in $dishwasher color #E2E2E2 -> #4A4D54;
+in $dishwasher color #E3E3E3 -> #4A4D54;
+in $dishwasher color #E4E4E4 -> #4A4D54;
+in $dishwasher color #E5E5E5 -> #4A4D54;
+in $dishwasher color #E6E6E6 -> #4A4D54;
+in $dishwasher color #E7E7E7 -> #4A4D54;
+in $dishwasher color #E8E8E8 -> #4A4D54;
+in $dishwasher color #E9E9E9 -> #4A4D54;
+
+#Washing Machine
+in $washing_machine color #A5A5A5 -> #000000;
+in $washing_machine color #EAEAEA -> #4A4D54;
+in $washing_machine color #B2B2B2 -> #35383D;
+in $washing_machine color #7F7F7F -> #2C3135;
+in $washing_machine color #CECECE -> #202326;
+in $washing_machine color #D8D8D8 -> #151719;
+in $washing_machine color #E2E2E2 -> #64686D;
+in $washing_machine color #A8A5A4 -> #151719;
+in $washing_machine color #BCBCBC -> #35383D;
+in $washing_machine color #C6C3C2 -> #35383D;
+in $washing_machine color #7F7F7F -> #2C3135;
+in $washing_machine color #9A9A9A -> #151719;
+in $washing_machine color #DBDBDB -> #414449;
+
+#Kitchen Cabinet
+#This one looks a little odd because the bottom left 
+#slot is messed up in the original texture
+in $kitchen_cabinet color #383838 -> #000000;
+in $kitchen_cabinet color #C0C0C0 -> #4A4D54;
+in $kitchen_cabinet color #383838 -> #151719;
+in $kitchen_cabinet color #D6D6D6 -> #64686D;
+in $kitchen_cabinet color #DBDBDB -> #35383D;
+in $kitchen_cabinet color #959595 -> #35383D;

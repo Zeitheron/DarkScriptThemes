@@ -1,0 +1,31 @@
+version 1;
+bid e44868c1-018d-4ef9-a6e3-fad6171f87c9;
+id xaerominimap;
+name "Xaero's Minimap";
+description "Tweaks to the Default Dark Style for Xaero's Minimap";
+icon "http://dccg.herokuapp.com/cfproject/263420/avatar";
+authors ["WenXin2"];
+require mod "xaerominimap";
+
+const maps: "xaerobetterpvp:gui/guis.png";
+
+#Excludes arrows and dots on the map
+in $maps exclude rectX256(47, 0, 30, 30);
+in $maps exclude rectX256(10, 78, 6, 6);
+in $maps exclude rectX256(2, 89, 6, 6);
+in $maps exclude rectX256(0, 78, 9, 9);
+
+#Minimap Border
+in $maps color #CDCDCD -> #4A4D54;
+in $maps color #A9A9A9 -> #44464C;
+in $maps color #AAAAAA -> #404247;
+in $maps color #919191 -> #3D3F44;
+in $maps color #929292 -> #393B3F;
+in $maps color #606060 -> #2C3135;
+in $maps color #626262 -> #262A2D;
+in $maps color #656565 -> #272B2D;
+in $maps color #676767 -> #282D30;
+in $maps color #5A5A5A -> #2A2E30;
+in $maps color #5B5B5B -> #24282B;
+in $maps color #5D5D5D -> #262A2D;
+in $maps color #5E5E5E -> #24282B;

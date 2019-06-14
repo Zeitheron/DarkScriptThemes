@@ -1,0 +1,22 @@
+version 1;
+bid 7d255c0f-c7c6-4a56-b68d-10b552a22308;
+id wts;
+name "What's That Slot?";
+description "Tweaks to the Default Dark Style for What's That Slot";
+icon "http://dccg.herokuapp.com/cfproject/247895/avatar";
+authors ["WenXin2"];
+require mod "wts";
+
+const wts: "wts:textures/gui/gui.png";
+
+#Default GUI textures:
+in $wts color #545454 -> #151719;
+in $wts color #5A5A5A -> #0E1011;
+in $wts color #606060 -> #060707;
+in $wts color #686868 -> #3A3A3A;
+in $wts color #7A7A7A -> #2C2E33;
+in $wts color #858585 -> #35383D;
+in $wts color #969696 -> #35383D;
+in $wts color #B4B4B4 -> #3D3F44;
+in $wts color #F3F3F3 -> #595C60;
+in $wts color #F9F9F9 -> #4E5054;

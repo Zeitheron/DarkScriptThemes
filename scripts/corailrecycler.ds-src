@@ -1,0 +1,19 @@
+version 1;
+bid af308c66-cb1f-4f91-aa43-fbe4831bc035;
+id recycler;
+name "Corail Recycler";
+description "Tweaks to the Default Dark Style for Corail Recycler";
+icon "http://dccg.herokuapp.com/cfproject/243049/avatar";
+authors ["WenXin2"];
+require mod "recycler";
+
+const recycler: "recycler:textures/gui/vanilla_recycler.png";
+
+#Exclude the button:
+in $recycler exclude rectX256(0, 214, 74, 42);
+
+#Make the blue highlight darker:
+in $recycler color #BBC2EC -> #7079A5;
+
+# Exclude book [by Zeith]
+exclude recycler:textures/gui/book.png;

@@ -1,4 +1,4 @@
-version 6;
+version 7;
 id default;
 name "Default Style";
 icon "http://dccg.herokuapp.com/cfproject/323440/avatar";
@@ -31,8 +31,9 @@ exclude $gui/widgets.png;
 exclude $gui/stream_indicator.png;
 exclude $gui/options_background.png;
 
-# Exclude advancements
+# Advancements
 exclude $gui/advancements/backgrounds/*;
+in "$gui/advancements/window.png" color #C3C3C3 -> #4A4D54;
 
 # JEI support
 color #D8D8D8 -> #575B60;

@@ -1,4 +1,4 @@
-version 2;
+version 3;
 bid 5d647baa-0458-4175-89f4-0efc01e824c8;
 id jei;
 name "Just Enough Items";
@@ -9,3 +9,5 @@ require mod "jei";
 
 in "jei:textures" exclude rect(0 / 256, 100 / 128, 80 / 256, 20 / 128);
 in "jei:textures" exclude rect(128 / 256, 0 / 128, 16 / 256, 16 / 128);
+in "jei:textures" exclude rect(128 / 256, 64 / 128, 10 / 256, 20 / 128);
+in "jei:textures" exclude rect(112 / 256, 80 / 128, 8 / 256, 8 / 128);

@@ -1,0 +1,23 @@
+version 1;
+bid c7bddbf8-9cfd-4021-a75d-3f7a3274d58f;
+id botania;
+name "Botania";
+icon "http://dccg.herokuapp.com/cfproject/225643/avatar";
+description "Fixes for Botania HUD and GUIs.";
+authors ["Zeitheron"];
+require mod "botania";
+
+const guis: botania:textures/gui;
+
+exclude $guis/entries/*;
+exclude $guis/categories/*;
+exclude $guis/bossbar.png;
+exclude $guis/dog.png;
+exclude $guis/elventradeoverlay.png;
+exclude $guis/hudicons.png;
+exclude $guis/lexicon.png;
+exclude $guis/manahud.png;
+exclude $guis/paper.png;
+exclude $guis/potions.png;
+exclude $guis/stencil.png;
+exclude $guis/toff.png;

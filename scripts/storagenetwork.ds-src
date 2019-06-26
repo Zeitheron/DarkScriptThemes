@@ -1,0 +1,32 @@
+version 1;
+bid 891d3994-2093-4bd1-b2eb-07a2225ffa62;
+id storagenetwork;
+name "Simple Storage Network";
+icon "http://dccg.herokuapp.com/cfproject/241064/avatar";
+description "GUI fixes for Simple Storage Network";
+authors ["WenXin2"];
+require mod "storagenetwork";
+
+const cable: "storagenetwork:textures/gui/cable.png";
+const widget: "storagenetwork:textures/gui/enderio-publicdomain-widgetsv2.png";
+const request: "storagenetwork:textures/gui/request.png";
+const request_full: "storagenetwork:textures/gui/request_full.png";
+
+# Cable fixes
+in $cable exclude rectX256(176, 52, 32, 16);
+in $cable exclude rectX256(176, 68, 34, 58);
+in $cable color #262626 -> #1B1E21;
+
+# Widget fixes
+in $widget exclude rectX256(0, 196, 32, 20);
+in $widget color #262626 -> #1B1E21;
+
+# Request gui fixes
+in $request exclude rectX256(176, 0, 28, 14);
+in $request exclude rectX256(176, 14, 30, 8);
+in $request exclude rectX256(176, 22, 12, 7);
+in $request color #262626 -> #1B1E21;
+in $request color #6B6B6B -> #35383D;
+
+# Request gui fixes
+in $request_full color #262626 -> #1B1E21;

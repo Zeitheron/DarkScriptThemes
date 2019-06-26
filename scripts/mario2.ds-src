@@ -1,0 +1,21 @@
+version 1;
+bid 514601fe-d783-4559-9c0b-83ddcf6f7479;
+id mario2;
+name "Mario 2";
+icon "http://dccg.herokuapp.com/cfproject/273324/avatar";
+description "GUI fixes for the Mario 2 mod";
+authors ["WenXin2"];
+require mod "mario2";
+
+const recipe_background: "mario2:textures/gui/recipebackground2.png";
+const mario_maker: "mario2:textures/gui/mariomakergui.png";
+
+# Exclude buttons
+in $recipe_background exclude rectX256(0, 166, 32, 16);
+
+# Mario maker gui & jei fixes
+in $mario_maker color #828282 -> #35383D;
+in $mario_maker color #959595 -> #35383D;
+in $mario_maker color #494949 -> #1B1E21;
+in $mario_maker color #4C4C4C -> #1B1E21;
+in $mario_maker color #F7F7F7 -> #64686D;

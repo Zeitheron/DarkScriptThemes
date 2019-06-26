@@ -1,0 +1,170 @@
+version 1;
+bid ba0e1fe1-8db4-4312-9cd9-05b7507aea48;
+id typicalheroes;
+name "Typical Heroes";
+icon "http://dccg.herokuapp.com/cfproject/299922/avatar";
+description "GUI fixes for the Typical Heroes mod";
+authors ["WenXin2"];
+require mod "sm";
+
+# Text fixes
+text transform in barryflash.superheroes.client.gui.*;
+text color #555144 -> #110D00;
+
+exclude sm:textures/gui/container/suit_maker_menu_logos.png
+exclude sm:textures/gui/container/tab_superheroesmod.png
+exclude sm:textures/gui/fusion_chamber_full.png
+exclude sm:textures/gui/fusion_chamber_recipe.png
+exclude sm:textures/gui/icons/*
+
+const bat_gadget_indicator: "sm:textures/gui/container/batmanbatgadgetindicatorgui.png";
+const suit_maker: "sm:textures/gui/container/suit_maker.png";
+const fusion_chamber: "sm:textures/gui/fusion_chamber.png";
+const nano_compacter: "sm:textures/gui/nano_compacter.png";
+const fuel_generator: "sm:textures/gui/fuel_generator.png";
+const dna_extractor: "sm:textures/gui/dna_extractor.png";
+const zeus_altar: "sm:textures/gui/zeus_altar.png";
+const lightning_extractor: "sm:textures/gui/lightning_extractor.png";
+
+# Lightning extractor gui fixes
+in $lightning_extractor exclude rectX256(7, 20, 18, 75);
+in $lightning_extractor exclude rectX256(151, 20, 18, 75);
+in $lightning_extractor exclude rectX256(176, 17, 16, 73);
+
+# Zeus altar fixes
+in $zeus_altar exclude rectX256(0, 204, 50, 48);
+in $zeus_altar color #555144 -> #1E190A;
+in $zeus_altar color #5A5648 -> #1E190A;
+in $zeus_altar color #5C5749 -> #1E190A;
+in $zeus_altar color #5D594B -> #1E190A;
+in $zeus_altar color #7B7663 -> #1E190A;
+in $zeus_altar color #928B75 -> #1E190A;
+in $zeus_altar color #AEA68D -> #1E190A;
+in $zeus_altar color #ADA58C -> #383018;
+in $zeus_altar color #B0A88E -> #493F20;
+in $zeus_altar color #B4AC90 -> #493F20;
+in $zeus_altar color #B5AC92 -> #493F20;
+in $zeus_altar color #B9B195 -> #493F20;
+in $zeus_altar color #BEB599 -> #493F20;
+in $zeus_altar color #C0B89B -> #493F20;
+in $zeus_altar color #C2BA9C -> #493F20;
+in $zeus_altar color #C3BA9D -> #493F20;
+in $zeus_altar color #C4BB9D -> #493F20;
+in $zeus_altar color #C5BC9E -> #493F20;
+in $zeus_altar color #C6BD9F -> #493F20;
+in $zeus_altar color #C7BEA0 -> #493F20;
+in $zeus_altar color #C8BFA1 -> #493F20;
+in $zeus_altar color #CAC1A2 -> #493F20;
+in $zeus_altar color #D0C7A7 -> #493F20;
+in $zeus_altar color #DAD0AF -> #89763B;
+in $zeus_altar color #DBD1B0 -> #89763B;
+in $zeus_altar color #DAD0AF -> #89763B;
+in $zeus_altar color #E1D6B5 -> #89763B;
+in $zeus_altar color #E4DAB7 -> #89763B;
+in $zeus_altar color #E6DBB8 -> #89763B;
+in $zeus_altar color #F1E6C1 -> #89763B;
+in $zeus_altar color #F5E9C5 -> #89763B;
+in $zeus_altar color #F9EDC8 -> #89763B;
+in $zeus_altar color #FBEFCA -> #89763B;
+in $zeus_altar color #FBF0CA -> #89763B;
+in $zeus_altar color #FDF1CB -> #89763B;
+in $zeus_altar color #FDF1CC -> #89763B;
+in $zeus_altar color #FEF2CC -> #89763B;
+in $zeus_altar color #FFF3CD -> #89763B;
+
+# DNA extractor gui fixes
+in $dna_extractor exclude rectX256(151, 6, 18, 75);
+in $dna_extractor exclude rectX256(176, 31, 16, 73);
+
+# Fuel Generator gui fixes
+in $fuel_generator exclude rectX256(151, 6, 18, 75);
+in $fuel_generator exclude rectX256(176, 31, 16, 73);
+in $fuel_generator exclude rectX256(87, 166, 15, 48);
+in $fuel_generator exclude rectX256(102, 166, 15, 20);
+
+# Nano compacter gui fixes
+in $nano_compacter exclude rectX256(151, 6, 18, 75);
+in $nano_compacter exclude rectX256(176, 31, 16, 73);
+
+# Fusion chamber gui fixes
+in $fusion_chamber exclude rectX256(7, 9, 18, 75);
+in $fusion_chamber exclude rectX256(230, 12, 18, 75);
+in $fusion_chamber exclude rectX256(0, 161, 80, 73);
+in $fusion_chamber exclude rectX256(80, 161, 66, 48);
+in $fusion_chamber exclude rectX256(173, 161, 16, 73);
+
+# Bat gadget gui fix
+in $bat_gadget_indicator exclude rectX256(0, 27, 19, 51);
+in $bat_gadget_indicator color #262626 -> #1F2226;
+
+# Suit maker fixes
+in $suit_maker exclude rectX256(44, 152, 50, 48);
+in $suit_maker exclude rectX256(182, 157, 48, 48);
+
+in $suit_maker color #4EFFFF -> #053F68;
+in $suit_maker color #6FD4DB -> #031D33;
+
+in $suit_maker color #7D7D7D -> #25292D;
+in $suit_maker color #898989 -> #25292D;
+in $suit_maker color #919191 -> #2C2E33;
+in $suit_maker color #958281 -> #2C2E33;
+in $suit_maker color #979797 -> #2C2E33;
+in $suit_maker color #A5A5A5 -> #35383D;
+in $suit_maker color #A8A8A8 -> #35383D;
+in $suit_maker color #ABABAB -> #35383D;
+in $suit_maker color #B5B5B5 -> #4A4D54;
+in $suit_maker color #B6B6B6 -> #4A4D54;
+in $suit_maker color #C5C4C3 -> #4A4D54;
+in $suit_maker color #C6C5C4 -> #4A4D54;
+in $suit_maker color #C6C5C5 -> #4A4D54;
+
+in $suit_maker color #A17876 -> #2E3951;
+in $suit_maker color #AE7976 -> #2E3951;
+in $suit_maker color #CB9D9B -> #2E3951;
+in $suit_maker color #CBA2A0 -> #2E3951;
+in $suit_maker color #CBA3A1 -> #303B54;
+in $suit_maker color #CF524C -> #303B54;
+in $suit_maker color #D0807C -> #323D56;
+in $suit_maker color #D46661 -> #323D56;
+in $suit_maker color #D65953 -> #343F59;
+in $suit_maker color #D84C45 -> #343F59;
+in $suit_maker color #DA664A -> #36415B;
+in $suit_maker color #DD5A3B -> #36415B;
+in $suit_maker color #E37F3A -> #343F59;
+in $suit_maker color #E68B2B -> #343F59;
+in $suit_maker color #E87927 -> #35405B;
+in $suit_maker color #E89834 -> #35405B;
+
+in $suit_maker color #E59642 -> #333E56;
+in $suit_maker color #E89834 -> #333E56;
+in $suit_maker color #EEAF13 -> #354059;
+in $suit_maker color #F2B92B -> #354059;
+in $suit_maker color #F39713 -> #37425B;
+in $suit_maker color #F6B81C -> #37425B;
+in $suit_maker color #F8B715 -> #39445E;
+in $suit_maker color #F8CA1D -> #39445E;
+in $suit_maker color #FFB600 -> #3B4660;
+in $suit_maker color #FFCA08 -> #3B4660;
+in $suit_maker color #FFDF11 -> #3D4863;
+in $suit_maker color #FFDF92 -> #3D4863;
+
+in $suit_maker color #F2DF22 -> #5B6984;
+in $suit_maker color #F2E23C -> #5B6984;
+in $suit_maker color #F2F22A -> #5B6984;
+in $suit_maker color #F7F736 -> #5E6C87;
+in $suit_maker color #F2F22A -> #5E6C87;
+in $suit_maker color #F9F22B -> #5E6C87;
+in $suit_maker color #FDF190 -> #616E89;
+in $suit_maker color #FFFF1F -> #616E89;
+in $suit_maker color #FFFF5E -> #616E89;
+in $suit_maker color #FFFF5F -> #626E8A;
+in $suit_maker color #FFFF9E -> #626E8A;
+in $suit_maker color #FFFFBE -> #626E8A;
+
+in $suit_maker color #F2F2D9 -> #5A5E66;
+in $suit_maker color #F8F8F8 -> #5B5F66;
+in $suit_maker color #FAEBEA -> #5C5F66;
+in $suit_maker color #FFF6E2 -> #5D6066;
+in $suit_maker color #FFFCE5 -> #5F6268;
+in $suit_maker color #FFFFDF -> #61656B;
+in $suit_maker color #FFFFFB -> #64686D;

@@ -1,0 +1,372 @@
+version 1;
+bid 28315a74-1971-48b9-a977-12eee8c41fde;
+id actuallyadditions;
+name "Actually Additions";
+icon "http://dccg.herokuapp.com/cfproject/228404/avatar";
+description "GUI and book fixes for Actually Additions";
+authors ["WenXin2"];
+require mod "actuallyadditions";
+
+# Text fixes
+text transform in de.ellpeck.actuallyadditions.mod.inventory.gui.*;
+text color #FFFFFF -> #BBBBBB;
+
+const crusher: "actuallyadditions:textures/gui/gui_grinder.png";
+const crusher_double: "actuallyadditions:textures/gui/gui_grinder_double.png";
+const gadgets: "actuallyadditions:textures/gui/booklet/gui_booklet_gadgets.png";
+const page_coffee_machine: "actuallyadditions:textures/gui/booklet/page_coffee_machine.png";
+const inventory: "actuallyadditions:textures/gui/gui_inventory.png";
+const inputter: "actuallyadditions:textures/gui/gui_inputter.png";
+const inputter_advanced: "actuallyadditions:textures/gui/gui_inputter_advanced.png";
+const coffee: "actuallyadditions:textures/gui/gui_coffee_machine.png";
+const feeder: "actuallyadditions:textures/gui/gui_feeder.png";
+const canola_press: "actuallyadditions:textures/gui/gui_canola_press.png";
+const fermenting_barrel: "actuallyadditions:textures/gui/gui_fermenting_barrel.png";
+
+# Exclude book images
+exclude actuallyadditions:textures/gui/booklet/page_farmer_cactus.png
+exclude actuallyadditions:textures/gui/booklet/page_farmer_crops.png
+exclude actuallyadditions:textures/gui/booklet/page_farmer_enderlilly.png
+exclude actuallyadditions:textures/gui/booklet/page_farmer_melons.png
+exclude actuallyadditions:textures/gui/booklet/page_farmer_redorchid.png
+exclude actuallyadditions:textures/gui/booklet/page_farmer_reeds.png
+exclude actuallyadditions:textures/gui/booklet/page_farmer_wart.png
+exclude actuallyadditions:textures/gui/booklet/page_lava_factory.png
+exclude actuallyadditions:textures/gui/booklet/page_jam_house.png
+exclude actuallyadditions:textures/gui/booklet/page_worms.png
+exclude actuallyadditions:textures/gui/booklet/page_treasure_chest.png
+exclude actuallyadditions:textures/gui/booklet/page_patreon.png
+exclude actuallyadditions:textures/gui/booklet/page_empowerer.png
+exclude actuallyadditions:textures/gui/booklet/page_fur_balls.png
+exclude actuallyadditions:textures/gui/booklet/page_lush_caves.png
+exclude actuallyadditions:textures/gui/booklet/page_atomic_reconstructor.png
+
+# Fermenting Barrel gui fixes
+in $fermenting_barrel color #C4C4C4 -> #4A4D54;
+in $fermenting_barrel color #FEFEFE -> #64686D;
+
+# Canola Press gui fixes
+in $canola_press color #C4C4C4 -> #4A4D54;
+in $canola_press color #FEFEFE -> #64686D;
+
+# Feeder icon fixes
+in $feeder color #575757 -> #1B1E21;
+in $feeder color #737373 -> #35383D;
+in $feeder color #747474 -> #35383D;
+in $feeder color #787878 -> #35383D;
+in $feeder color #7B7B7B -> #35383D;
+in $feeder color #7C7C7C -> #35383D;
+in $feeder color #878787 -> #3B3F44;
+in $feeder color #969696 -> #4A4E54;
+in $feeder color #ACACAC -> #4E5054;
+in $feeder color #C1C1C1 -> #54575B;
+in $feeder color #CDCDCD -> #54575B;
+in $feeder color #CFCFCF -> #54575B;
+in $feeder color #D8D8D8 -> #54575B;
+in $feeder color #DBDBDB -> #54575B;
+in $feeder color #E8E8E8 -> #54575B;
+
+# Double Crusher icon fixes
+in $crusher_double exclude rectX256(68, 41, 2, 1);
+in $crusher_double exclude rectX256(67, 42, 4, 1);
+in $crusher_double exclude rectX256(66, 43, 6, 1);
+in $crusher_double exclude rectX256(65, 44, 8, 1);
+in $crusher_double exclude rectX256(64, 45, 10, 1);
+in $crusher_double exclude rectX256(63, 46, 12, 1);
+in $crusher_double exclude rectX256(63, 47, 12, 1);
+in $crusher_double exclude rectX256(63, 48, 12, 1);
+in $crusher_double exclude rectX256(64, 49, 10, 1);
+in $crusher_double exclude rectX256(65, 50, 8, 1);
+in $crusher_double exclude rectX256(67, 51, 4, 1);
+
+in $crusher_double exclude rectX256(106, 41, 2, 1);
+in $crusher_double exclude rectX256(105, 42, 4, 1);
+in $crusher_double exclude rectX256(104, 43, 6, 1);
+in $crusher_double exclude rectX256(103, 44, 8, 1);
+in $crusher_double exclude rectX256(102, 45, 10, 1);
+in $crusher_double exclude rectX256(101, 46, 12, 1);
+in $crusher_double exclude rectX256(101, 47, 12, 1);
+in $crusher_double exclude rectX256(101, 48, 12, 1);
+in $crusher_double exclude rectX256(102, 49, 10, 1);
+in $crusher_double exclude rectX256(103, 50, 8, 1);
+in $crusher_double exclude rectX256(105, 51, 4, 1);
+
+# Crusher icon fixes
+in $crusher exclude rectX256(97, 41, 2, 1);
+in $crusher exclude rectX256(96, 42, 4, 1);
+in $crusher exclude rectX256(95, 43, 6, 1);
+in $crusher exclude rectX256(94, 44, 8, 1);
+in $crusher exclude rectX256(93, 45, 10, 1);
+in $crusher exclude rectX256(92, 46, 12, 1);
+in $crusher exclude rectX256(92, 47, 12, 1);
+in $crusher exclude rectX256(92, 48, 12, 1);
+in $crusher exclude rectX256(93, 49, 10, 1);
+in $crusher exclude rectX256(94, 50, 8, 1);
+in $crusher exclude rectX256(96, 51, 4, 1);
+
+# Coffee Maker fixes
+in $coffee color #543E22 -> #382B13;
+in $coffee color #72665A -> #514223;
+in $coffee color #767676 -> #272A2D;
+in $coffee color #777777 -> #272A2D;
+in $coffee color #8C8C8C -> #35383D;
+in $coffee color #8D8D8D -> #35383D;
+in $coffee color #C3C3C3 -> #4A4D54;
+in $coffee color #C4C4C4 -> #4A4D54;
+in $coffee color #C5C5C5 -> #4A4D54;
+in $coffee color #E2E2E2 -> #64686D;
+in $coffee color #FEFEFE -> #64686D;
+
+# Advanced Inputter fix
+in $inputter_advanced color #A09172 -> #514223;
+
+# Inputter fixes
+in $inputter exclude rectX256(176, 0, 16, 48);
+in $inputter exclude rectX256(192, 0, 8, 24);
+in $inputter exclude rectX256(200, 0, 16, 36);
+in $inputter color #A09172 -> #514223;
+
+# Exclude power indicator fixes
+in $inventory exclude rectX256(19, 172, 16, 83);
+in $inventory exclude rectX256(36, 172, 16, 83);
+in $inventory color #6B6B6B -> #272A2D;
+in $inventory color #767676 -> #35383D;
+in $inventory color #E2E2E2 -> #64686D;
+
+# Exclude buttons
+in $gadgets exclude rectX256(0, 0, 20, 40);
+
+# Book arrow fixes
+in $gadgets color #E1D3B7 -> #4A4D54;
+in $gadgets color #C5B091 -> #36383D;
+in $gadgets color #FDF6E5 -> #646464;
+in $gadgets color #FAF0D8 -> #616161;
+in $gadgets color #FAF0D6 -> #5E5E5E;
+in $gadgets color #F9EFD3 -> #565656;
+in $gadgets color #FBF1D9 -> #626262;
+
+# Book slot fixes
+in $gadgets color #B1B1B1 -> #151719;
+in $gadgets color #D2D2D2 -> #35383D;
+
+# Bubble icon fixes
+in $gadgets color #FEFEFE -> #64686D;
+in $gadgets color #CECECE -> #35383D;
+in $gadgets color #ABABAB -> #151719;
+
+# Earth icon fixes
+in $gadgets color #777777 -> #151719;
+in $gadgets color #868686 -> #35383D;
+in $gadgets color #878787 -> #35383D;
+in $gadgets color #8C8C8C -> #3B3F44;
+
+# Crusher icon fixes
+in $gadgets color #919191 -> #464B51;
+in $gadgets color #888888 -> #414549;
+in $gadgets color #8A8A8A -> #404449;
+in $gadgets color #A5A5A5 -> #4F545B;
+
+# Exclude wrench & cake icons
+in $gadgets exclude rectX256(188, 30, 16, 16);
+in $gadgets exclude rectX256(204, 30, 16, 16);
+
+# Fixes to the coffee machine book entry
+in $page_coffee_machine color #383838 -> #151719;
+in $page_coffee_machine color #3B3B3B -> #151719;
+in $page_coffee_machine color #3E3E3E -> #151719;
+in $page_coffee_machine color #3F3F3F -> #151719;
+in $page_coffee_machine color #404040 -> #151719;
+in $page_coffee_machine color #424242 -> #151719;
+in $page_coffee_machine color #424242 -> #151719;
+in $page_coffee_machine color #434343 -> #151719;
+in $page_coffee_machine color #444444 -> #151719;
+in $page_coffee_machine color #4D4D4D -> #151719;
+in $page_coffee_machine color #545454 -> #2C2E33;
+in $page_coffee_machine color #585858 -> #35383D;
+in $page_coffee_machine color #616161 -> #191C1E;
+in $page_coffee_machine color #626262 -> #2C2E33;
+in $page_coffee_machine color #646464 -> #2C2E33;
+in $page_coffee_machine color #686868 -> #2E3135;
+in $page_coffee_machine color #696969 -> #2C2E33;
+in $page_coffee_machine color #6A6A76 -> #2C2E33;
+in $page_coffee_machine color #6A6A6A -> #2C2E33;
+in $page_coffee_machine color #6B6B6B -> #35383D;
+in $page_coffee_machine color #6C6C6C -> #35383D;
+in $page_coffee_machine color #6C6C6C -> #35383D;
+in $page_coffee_machine color #6D6D78 -> #35383D;
+in $page_coffee_machine color #6F6F79 -> #35383D;
+in $page_coffee_machine color #8C8C8C -> #35383D;
+in $page_coffee_machine color #8D8D8D -> #35383D;
+in $page_coffee_machine color #747474 -> #232528;
+in $page_coffee_machine color #777777 -> #232528;
+in $page_coffee_machine color #787878 -> #232528;
+in $page_coffee_machine color #797979 -> #35383D;
+in $page_coffee_machine color #79797F -> #35383D;
+in $page_coffee_machine color #7A7A7A -> #232528;
+in $page_coffee_machine color #7B7B7B -> #35383D;
+in $page_coffee_machine color #7C7C81 -> #35383D;
+in $page_coffee_machine color #7E7E7E -> #35383D;
+in $page_coffee_machine color #818185 -> #2E3135;
+in $page_coffee_machine color #828282 -> #2E3135;
+in $page_coffee_machine color #838383 -> #35383D;
+in $page_coffee_machine color #838386 -> #35383D;
+in $page_coffee_machine color #848484 -> #35383D;
+in $page_coffee_machine color #858585 -> #35383D;
+in $page_coffee_machine color #858587 -> #35383D;
+in $page_coffee_machine color #888888 -> #35383D;
+in $page_coffee_machine color #888889 -> #35383D;
+in $page_coffee_machine color #898989 -> #35383D;
+in $page_coffee_machine color #8A8A8A -> #35383D;
+in $page_coffee_machine color #959595 -> #35383D;
+in $page_coffee_machine color #959595 -> #35383D;
+in $page_coffee_machine color #969696 -> #35383D;
+in $page_coffee_machine color #979797 -> #35383D;
+in $page_coffee_machine color #919191 -> #35383D;
+in $page_coffee_machine color #929292 -> #35383D;
+in $page_coffee_machine color #A1A1A1 -> #404449;
+in $page_coffee_machine color #A2A2A2 -> #303235;
+in $page_coffee_machine color #A5A5A5 -> #303235;
+in $page_coffee_machine color #A6A6A6 -> #404449;
+in $page_coffee_machine color #A8A8A8 -> #3C4044;
+in $page_coffee_machine color #A9A9A9 -> #3C4044;
+in $page_coffee_machine color #AAAAAA -> #35383D;
+in $page_coffee_machine color #ADADAD -> #3D3F44;
+in $page_coffee_machine color #AFAFAF -> #414449;
+in $page_coffee_machine color #B4B2B4 -> #414449;
+in $page_coffee_machine color #B4B4B4 -> #414449;
+in $page_coffee_machine color #B7B7B7 -> #414449;
+in $page_coffee_machine color #B9B9B9 -> #4A4D54;
+in $page_coffee_machine color #BEBEBE -> #4A4D54;
+in $page_coffee_machine color #C0C0C0 -> #4A4D54;
+in $page_coffee_machine color #C3C3C3 -> #4A4D54;
+in $page_coffee_machine color #C4C4C4 -> #4A4D54;
+in $page_coffee_machine color #D2D2D2 -> #4D5056;
+in $page_coffee_machine color #E3E3E3 -> #64686D;
+in $page_coffee_machine color #E6E6E6 -> #64686D;
+in $page_coffee_machine color #E8E8E8 -> #64686D;
+in $page_coffee_machine color #E9E9E9 -> #64686D;
+in $page_coffee_machine color #EFEFEF -> #64686D;
+in $page_coffee_machine color #F4F4F4 -> #64686D;
+in $page_coffee_machine color #F8F8F8 -> #64686D;
+in $page_coffee_machine color #F9F9F9 -> #64686D;
+in $page_coffee_machine color #FEFEFE -> #64686D;
+
+# OK button
+in $page_coffee_machine exclude rectX256(12, 18, 37, 18);
+
+# Coffee mug
+in $page_coffee_machine exclude rectX256(17, 49, 7, 9);
+in $page_coffee_machine exclude rectX256(16, 50, 1, 8);
+in $page_coffee_machine exclude rectX256(24, 50, 1, 8);
+in $page_coffee_machine exclude rectX256(17, 58, 6, 1);
+in $page_coffee_machine exclude rectX256(18, 58, 2, 1);
+in $page_coffee_machine exclude rectX256(22, 59, 3, 1);
+in $page_coffee_machine exclude rectX256(19, 60, 3, 1);
+in $page_coffee_machine exclude rectX256(23, 60, 1, 1);
+in $page_coffee_machine exclude rectX256(20, 61, 3, 1);
+in $page_coffee_machine exclude rectX256(25, 51, 2, 1);
+in $page_coffee_machine exclude rectX256(27, 52, 1, 2);
+in $page_coffee_machine exclude rectX256(25, 54, 3, 1);
+in $page_coffee_machine exclude rectX256(24, 56, 2, 1);
+in $page_coffee_machine exclude rectX256(28, 56, 1, 1);
+in $page_coffee_machine exclude rectX256(26, 57, 3, 1);
+in $page_coffee_machine exclude rectX256(27, 58, 2, 1);
+in $page_coffee_machine exclude rectX256(28, 59, 1, 1);
+in $page_coffee_machine exclude rectX256(25, 60, 4, 1);
+in $page_coffee_machine exclude rectX256(26, 61, 2, 1);
+
+# Coffee Mug tooltip
+in $page_coffee_machine exclude rectX256(21, 73, 108, 33);
+in $page_coffee_machine exclude rectX256(20, 74, 1, 32);
+
+# Sugar icon 1
+in $page_coffee_machine exclude rectX256(62, 16, 1, 1);
+in $page_coffee_machine exclude rectX256(61, 17, 3, 1);
+in $page_coffee_machine exclude rectX256(60, 18, 5, 1);
+in $page_coffee_machine exclude rectX256(59, 19, 8, 1);
+in $page_coffee_machine exclude rectX256(58, 20, 10, 1);
+in $page_coffee_machine exclude rectX256(57, 21, 11, 1);
+in $page_coffee_machine exclude rectX256(57, 22, 11, 1);
+in $page_coffee_machine exclude rectX256(58, 23, 9, 1);
+in $page_coffee_machine exclude rectX256(59, 24, 7, 1);
+in $page_coffee_machine exclude rectX256(61, 25, 3, 1);
+
+# Sugar icon 2
+in $page_coffee_machine exclude rectX256(78, 16, 2, 1);
+in $page_coffee_machine exclude rectX256(77, 17, 4, 1);
+in $page_coffee_machine exclude rectX256(76, 18, 6, 1);
+in $page_coffee_machine exclude rectX256(75, 19, 8, 1);
+in $page_coffee_machine exclude rectX256(74, 20, 10, 1);
+in $page_coffee_machine exclude rectX256(73, 21, 11, 1);
+in $page_coffee_machine exclude rectX256(73, 22, 11, 1);
+in $page_coffee_machine exclude rectX256(74, 23, 10, 1);
+in $page_coffee_machine exclude rectX256(75, 24, 8, 1);
+in $page_coffee_machine exclude rectX256(77, 25, 4, 1);
+
+# Milk icon
+in $page_coffee_machine exclude rectX256(60, 31, 5, 1);
+in $page_coffee_machine exclude rectX256(58, 32, 9, 1);
+in $page_coffee_machine exclude rectX256(57, 33, 11, 1);
+in $page_coffee_machine exclude rectX256(57, 34, 11, 1);
+in $page_coffee_machine exclude rectX256(57, 35, 11, 1);
+in $page_coffee_machine exclude rectX256(57, 36, 11, 1);
+in $page_coffee_machine exclude rectX256(57, 37, 11, 1);
+in $page_coffee_machine exclude rectX256(58, 38, 9, 1);
+in $page_coffee_machine exclude rectX256(58, 39, 9, 1);
+in $page_coffee_machine exclude rectX256(58, 40, 9, 1);
+in $page_coffee_machine exclude rectX256(59, 41, 7, 1);
+in $page_coffee_machine exclude rectX256(60, 42, 5, 1);
+
+# Magma Cream icon
+in $page_coffee_machine exclude rectX256(77, 31, 4, 1);
+in $page_coffee_machine exclude rectX256(75, 32, 8, 1);
+in $page_coffee_machine exclude rectX256(74, 33, 9, 1);
+in $page_coffee_machine exclude rectX256(74, 34, 9, 1);
+in $page_coffee_machine exclude rectX256(73, 35, 11, 1);
+in $page_coffee_machine exclude rectX256(73, 36, 11, 1);
+in $page_coffee_machine exclude rectX256(73, 37, 11, 1);
+in $page_coffee_machine exclude rectX256(73, 38, 11, 1);
+in $page_coffee_machine exclude rectX256(74, 39, 9, 1);
+in $page_coffee_machine exclude rectX256(74, 40, 9, 1);
+in $page_coffee_machine exclude rectX256(77, 41, 4, 1);
+in $page_coffee_machine color #7D5E5D -> #442E32;
+in $page_coffee_machine color #897879 -> #442E32;
+in $page_coffee_machine color #857B79 -> #442E32;
+in $page_coffee_machine color #8A777A -> #442E32;
+in $page_coffee_machine color #897879 -> #442E32;
+in $page_coffee_machine color #865A61 -> #442E32;
+in $page_coffee_machine color #855D60 -> #442E32;
+in $page_coffee_machine color #864F56 -> #442E32;
+in $page_coffee_machine color #884044 -> #442E32;
+in $page_coffee_machine color #866167 -> #442E32;
+in $page_coffee_machine color #895F66 -> #442E32;
+in $page_coffee_machine color #9A5A66 -> #442E32;
+in $page_coffee_machine color #7F6464 -> #442E32;
+in $page_coffee_machine color #774F47 -> #442E32;
+in $page_coffee_machine color #83434D -> #442E32;
+
+# Cup with coffee icon
+in $page_coffee_machine color #9D9E9E -> #404144;
+in $page_coffee_machine color #9E9E9E -> #404144;
+in $page_coffee_machine color #A5A6A6 -> #404144;
+in $page_coffee_machine color #ADADAD -> #404144;
+in $page_coffee_machine color #AFB0B0 -> #484A4F;
+in $page_coffee_machine color #B5B5B5 -> #484A4F;
+in $page_coffee_machine color #B5B6B6 -> #484A4F;
+in $page_coffee_machine color #B6B7B7 -> #484A4F;
+in $page_coffee_machine color #B8B9B9 -> #4D4F54;
+in $page_coffee_machine color #BCBDBD -> #515359;
+in $page_coffee_machine color #C2C2C2 -> #5D6068;
+in $page_coffee_machine color #C5C5C5 -> #5D6068;
+
+in $page_coffee_machine color #808080 -> #44474C;
+in $page_coffee_machine color #868686 -> #4B4E54;
+in $page_coffee_machine color #8A8A8A -> #4B4E54;
+in $page_coffee_machine color #8D8D8D -> #4B4E54;
+in $page_coffee_machine color #8F9090 -> #4B4E54;
+
+in $page_coffee_machine color #8F8A83 -> #514E4B;
+in $page_coffee_machine color #979084 -> #3D3A35;
+in $page_coffee_machine color #9E9382 -> #3F3B34;
+in $page_coffee_machine color #9E9381 -> #3F3B34;
+in $page_coffee_machine color #A49C8E -> #514D46;

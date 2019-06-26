@@ -1,0 +1,10 @@
+version 1;
+bid 7face739-d39c-461b-90fb-afde07cf33ea;
+id fbp;
+name "Fancy Block Particles";
+icon "http://dccg.herokuapp.com/cfproject/254441/avatar";
+description "Icon fixes for the Fancy Block Particles mod";
+authors ["WenXin2"];
+require mod "fbp";
+
+exclude fbp:textures/gui/*

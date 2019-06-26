@@ -1,0 +1,184 @@
+version 1;
+bid 2c20d55d-9c30-450b-9a17-ce02b985e145;
+id grimpack;
+name "Grim Pack";
+icon "http://dccg.herokuapp.com/cfproject/245062/avatar";
+description "GUI fixes for the Grim Pack mod";
+authors ["WenXin2"];
+require mod "grimpack";
+
+# Text fixes
+text transform in com.grim3212.mc.pack.industry.client.gui.*;
+
+const manual_backpacks: "grimpack:textures/gui/manual/colors_image.png";
+const manual_time: "grimpack:textures/gui/manual/time.png";
+const cage: "grimpack:textures/gui/cage.png";
+const grill: "grimpack:textures/gui/grill.png";
+const modern_furnace: "grimpack:textures/gui/gui_modern_furnace.png";
+const jei_modern_furnace: "grimpack:textures/gui/jei_machine.png";
+const jei_grill: "grimpack:textures/gui/jei_grill.png";
+const jei_chisel: "grimpack:textures/gui/jei_chisel.png";
+const extruder: "grimpack:textures/gui/extruder.png";
+const gui_manual: "grimpack:textures/gui/gui_manual.png";
+const gui_neon_sign: "grimpack:textures/gui/gui_neon_sign.png";
+const sensor: "grimpack:textures/gui/specific_sensor.png";
+
+# Sensor gui fixes
+in $gui_neon_sign color #222222 -> #151719;
+
+# Neon sign gui fixes
+in $gui_neon_sign exclude rectX256(181, 215, 4, 4);
+in $gui_neon_sign exclude rectX256(195, 215, 4, 4);
+in $gui_neon_sign color #5D5D5D -> #151719;
+
+# Book arrow fixes
+in $gui_manual exclude rectX256(0, 0, 192, 236);
+in $gui_manual color #C5B091 -> #36383D;
+in $gui_manual color #E1D3B7 -> #4A4D54;
+in $gui_manual color #F9EFD3 -> #565656;
+in $gui_manual color #FAF0D6 -> #5E5E5E;
+in $gui_manual color #FAF0D8 -> #616161;
+in $gui_manual color #FAF0D9 -> #626262;
+in $gui_manual color #FCF6E5 -> #646464;
+in $gui_manual color #FDF6E5 -> #646464;
+
+# Extruder gui fixes
+in $extruder color #D0D0D0 -> #4A4D54;
+in $extruder color #474747 -> #151719;
+in $extruder color #595959 -> #151719;
+in $extruder color #9C9C9C -> #35383D;
+in $extruder color #ACACAC -> #35383D;
+in $extruder color #FFFEFF -> #64686D;
+in $extruder color #FEFEFF -> #64686D;
+in $extruder color #7B7A7B -> #151719;
+
+# Chisel jei fixes
+in $jei_chisel color #2A2A2A -> #151719;
+in $jei_chisel color #404040 -> #151719;
+in $jei_chisel color #787878 -> #35383D;
+in $jei_chisel color #636363 -> #232528;
+in $jei_chisel color #8F8F8F -> #35383D;
+in $jei_chisel color #949494 -> #35383D;
+
+# Grill jei and fire fixes
+in $jei_grill exclude rectX256(6, 7, 1, 30);
+in $jei_grill exclude rectX256(13, 7, 2, 30);
+in $jei_grill exclude rectX256(21, 7, 2, 30);
+in $jei_grill exclude rectX256(29, 7, 2, 30);
+in $jei_grill exclude rectX256(37, 7, 1, 30);
+in $jei_grill exclude rectX256(86, 7, 1, 30);
+in $jei_grill exclude rectX256(93, 7, 2, 6);
+in $jei_grill exclude rectX256(101, 7, 2, 6);
+in $jei_grill exclude rectX256(109, 7, 2, 6);
+in $jei_grill exclude rectX256(93, 31, 2, 6);
+in $jei_grill exclude rectX256(101, 31, 2, 6);
+in $jei_grill exclude rectX256(109, 31, 2, 6);
+in $jei_grill exclude rectX256(117, 7, 1, 30);
+
+in $jei_grill color #404040 -> #151719;
+in $jei_grill color #919191 -> #35383D;
+
+in $jei_grill color #FF0000 -> #474F64;
+in $jei_grill color #FF6A00 -> #495675;
+in $jei_grill color #FFD800 -> #626E8A;
+in $jei_grill color #FFF5C6 -> #64676B;
+
+in $jei_grill color #B5B3A9 -> #4A4D54;
+
+# Backpack manual fixes
+in $manual_backpacks exclude rectX256(39, 182, 13, 13);
+in $manual_backpacks exclude rectX256(129, 187, 3, 9);
+in $manual_backpacks exclude rectX256(123, 179, 6, 17);
+in $manual_backpacks exclude rectX256(120, 180, 3, 16);
+in $manual_backpacks exclude rectX256(119, 182, 1, 13);
+in $manual_backpacks exclude rectX256(118, 186, 1, 8);
+in $manual_backpacks exclude rectX256(149, 187, 3, 9);
+in $manual_backpacks exclude rectX256(143, 179, 6, 17);
+in $manual_backpacks exclude rectX256(140, 180, 3, 16);
+in $manual_backpacks exclude rectX256(139, 182, 1, 13);
+in $manual_backpacks exclude rectX256(138, 186, 1, 8);
+
+# Time manual fixes
+in $manual_time color #222222 -> #1B1E21;
+in $manual_time color #313131 -> #1D2023;
+
+# Cage gui fixes
+in $cage color #484848 -> #212326;
+in $cage color #5D5D5D -> #272A2D;
+in $cage color #646464 -> #272A2D;
+in $cage color #929292 -> #35383D;
+in $cage color #E5E5E5 -> #5B5F63;
+in $cage color #C0C0C0 -> #4A4D54;
+in $cage color #C9C9C9 -> #4A4D54;
+
+# Grill gui and fire fixes
+in $grill exclude rectX256(140, 39, 3, 1);
+in $grill exclude rectX256(139, 40, 5, 1);
+in $grill exclude rectX256(138, 41, 7, 1);
+in $grill exclude rectX256(138, 42, 8, 1);
+in $grill exclude rectX256(138, 43, 9, 1);
+in $grill exclude rectX256(137, 44, 11, 1);
+in $grill exclude rectX256(137, 45, 11, 1);
+in $grill exclude rectX256(137, 46, 12, 1);
+in $grill exclude rectX256(137, 47, 12, 1);
+in $grill exclude rectX256(137, 48, 12, 1);
+in $grill exclude rectX256(138, 49, 10, 1);
+in $grill exclude rectX256(139, 50, 8, 1);
+in $grill exclude rectX256(140, 51, 3, 1);
+
+in $grill exclude rectX256(176, 0, 16, 2);
+in $grill exclude rectX256(176, 10, 16, 2);
+
+in $grill color #404040 -> #151719;
+in $grill color #919191 -> #35383D;
+
+in $grill color #FF0000 -> #474F64;
+in $grill color #FF6A00 -> #495675;
+in $grill color #FFD800 -> #626E8A;
+in $grill color #FFF5C6 -> #64676B;
+
+# Modern furnace fire fixes
+in $modern_furnace color #D85145 -> #474F64;
+in $modern_furnace color #F7FF1F -> #626E8A;
+in $modern_furnace color #FFBE00 -> #495675;
+
+# Modern furnace fire fixes
+in $jei_modern_furnace color #D85145 -> #474F64;
+in $jei_modern_furnace color #F7FF1F -> #626E8A;
+in $jei_modern_furnace color #FFBE00 -> #495675;
+in $jei_modern_furnace color #E5FFFF -> #22436B;
+
+exclude grimpack:textures/gui/manual/autoitem.png
+exclude grimpack:textures/gui/manual/autotorch.png
+exclude grimpack:textures/gui/manual/blackore.png
+exclude grimpack:textures/gui/manual/cocoa_tree_page.png
+exclude grimpack:textures/gui/manual/corruption.png
+exclude grimpack:textures/gui/manual/doors.png
+exclude grimpack:textures/gui/manual/dragon_fruit_page.png
+exclude grimpack:textures/gui/manual/element115.png
+exclude grimpack:textures/gui/manual/farmer.png
+exclude grimpack:textures/gui/manual/flat.png
+exclude grimpack:textures/gui/manual/floating.png
+exclude grimpack:textures/gui/manual/fountain.png
+exclude grimpack:textures/gui/manual/frames_info_page.png
+exclude grimpack:textures/gui/manual/fusrodah.png
+exclude grimpack:textures/gui/manual/grave.png
+exclude grimpack:textures/gui/manual/lava.png
+exclude grimpack:textures/gui/manual/lumber.png
+exclude grimpack:textures/gui/manual/miner.png
+exclude grimpack:textures/gui/manual/notch.png
+exclude grimpack:textures/gui/manual/parabuzzy.png
+exclude grimpack:textures/gui/manual/pixie.png
+exclude grimpack:textures/gui/manual/psycho.png
+exclude grimpack:textures/gui/manual/pyramid.png
+exclude grimpack:textures/gui/manual/randomite.png
+exclude grimpack:textures/gui/manual/ruin.png
+exclude grimpack:textures/gui/manual/snowball.png
+exclude grimpack:textures/gui/manual/spire.png
+exclude grimpack:textures/gui/manual/suicide.png
+exclude grimpack:textures/gui/manual/treasure.png
+exclude grimpack:textures/gui/manual/waterdome.png
+exclude grimpack:textures/gui/manual/well.png
+exclude grimpack:textures/gui/manual/worldgen.png
+exclude grimpack:textures/gui/alarm_gui.png
+exclude grimpack:textures/gui/refinery_overlay.png

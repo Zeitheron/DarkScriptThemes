@@ -1,4 +1,4 @@
-version 7;
+version 8;
 id default;
 name "Default Style";
 icon "http://dccg.herokuapp.com/cfproject/323440/avatar";
@@ -20,6 +20,9 @@ include *:guis/*
 
 # Optifine compat
 exclude minecraft:optifine/gui/loading/*
+
+# Fixes Creative Tab texts for Modded and Vanilla tabs
+text transform in net.minecraft.client.gui.*;
 
 exclude $gui/bars.png;
 exclude $gui/icons.png;

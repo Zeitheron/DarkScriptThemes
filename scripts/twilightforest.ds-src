@@ -1,0 +1,12 @@
+version 1;
+bid f36b493a-d5d1-4103-9456-8a37ecf4da11;
+id twilightforest;
+name "Twilight Forest";
+icon "http://dccg.herokuapp.com/cfproject/227639/avatar";
+description "Potion icon fixes for Twilight Forest";
+authors ["WenXin2"];
+require mod "twilightforest";
+
+exclude twilightforest:textures/gui/mapicons.png
+exclude twilightforest:textures/gui/frosty.png
+exclude twilightforest:textures/gui/glow_overlay.png

@@ -1,0 +1,10 @@
+version 1;
+bid d4dd5ced-4b67-4bb6-961b-cf6bb32b196f;
+id simplytea;
+name "Simply Tea";
+icon "http://dccg.herokuapp.com/cfproject/268373/avatar";
+description "Potion icon fixes for Simply Tea";
+authors ["WenXin2"];
+require mod "simplytea";
+
+exclude simplytea:textures/gui/potions.png

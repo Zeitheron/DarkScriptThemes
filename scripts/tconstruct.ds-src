@@ -1,11 +1,168 @@
-version 1;
+version 2;
 bid f28e8119-be96-46d4-bdde-c07a0cb88f50;
 id tconstruct;
 name "Tinkers' Construct";
 icon "http://dccg.herokuapp.com/cfproject/74072/avatar";
-description "Small text fixes for Tinkers' Construct";
-authors ["Zeitheron"];
+description "GUI and text fixes for Tinkers' Construct";
+authors ["Zeitheron", "WenXin2"];
 require mod "tconstruct";
 
-#Text fixes
-text transform in slimeknights.mantle.client.gui.*;
+const inventory_repair: "tconstruct:textures/gui/book/inventory_repair.png";
+const smeltery: "tconstruct:textures/gui/smeltery.png";
+const jei_casting: "tconstruct:textures/gui/jei/casting.png";
+const jei_smeltery: "tconstruct:textures/gui/jei/smeltery.png";
+const scrollbar: "tconstruct:textures/gui/generic.png";
+const icons: "tconstruct:textures/gui/icons.png";
+const toolstation: "tconstruct:textures/gui/toolstation.png";
+const panel: "tconstruct:textures/gui/panel.png";
+
+#Crosshair fix
+exclude tconstruct:textures/gui/crosshair/*;
+
+#Book fixes
+exclude tconstruct:textures/gui/book/bolt_core.png;
+exclude tconstruct:textures/gui/book/modify.png;
+exclude tconstruct:textures/gui/book/offhand.png;
+exclude tconstruct:textures/gui/book/seared_furnace.png;
+exclude tconstruct:textures/gui/book/smeltery.png;
+exclude tconstruct:textures/gui/book/tinker_tank.png;
+
+#Tried to exclude only the icons in the book, but couldn't select the right spots.
+#Certain parts of the image seem to be distorted.
+#exclude tconstruct:textures/gui/book/inventory_repair.png;
+#in $inventory_repair exclude rectX256(222, 90, 8, 2);
+#in $inventory_repair exclude rectX256(220, 92, 16, 2);
+#in $inventory_repair exclude rectX256(218, 94, 22, 2);
+#in $inventory_repair exclude rectX256(216, 96, 28, 2);
+#in $inventory_repair exclude rectX256(216, 98, 30, 2);
+#in $inventory_repair exclude rectX256(216, 100, 32, 2);
+#in $inventory_repair exclude rectX256(216, 102, 32, 2);
+#in $inventory_repair exclude rectX256(216, 104, 32, 2);
+#in $inventory_repair exclude rectX256(218, 106, 30, 2);
+#in $inventory_repair exclude rectX256(220, 108, 26, 2);
+#in $inventory_repair exclude rectX256(224, 110, 20, 2);
+#in $inventory_repair exclude rectX256(230, 112, 12, 2);
+#in $inventory_repair exclude rectX256(234, 114, 6, 2);
+
+#Smeltery fix
+in $smeltery exclude rectX256(176, 150, 12, 16);
+
+#JEI casting fixes
+in $jei_casting exclude rectX256(6, 3, 16, 55);
+in $jei_casting exclude rectX256(22, 42, 18, 16);
+in $jei_casting exclude rectX256(40, 3, 16, 55);
+in $jei_casting exclude rectX256(56, 15, 8, 8);
+in $jei_casting exclude rectX256(141, 0, 16, 32);
+in $jei_casting exclude rectX256(142, 38, 21, 3);
+in $jei_casting exclude rectX256(163, 39, 1, 1);
+in $jei_casting exclude rectX256(156, 32, 1, 1);
+in $jei_casting exclude rectX256(156, 33, 2, 1);
+in $jei_casting exclude rectX256(156, 34, 3, 1);
+in $jei_casting exclude rectX256(156, 35, 4, 1);
+in $jei_casting exclude rectX256(156, 36, 5, 1);
+in $jei_casting exclude rectX256(156, 37, 6, 1);
+in $jei_casting exclude rectX256(156, 41, 6, 1);
+in $jei_casting exclude rectX256(156, 42, 5, 1);
+in $jei_casting exclude rectX256(156, 43, 4, 1);
+in $jei_casting exclude rectX256(156, 44, 3, 1);
+in $jei_casting exclude rectX256(156, 45, 2, 1);
+in $jei_casting exclude rectX256(156, 46, 1, 1);
+
+#JEI smeltery fixes
+in $jei_smeltery exclude rectX256(11, 6, 16, 48);
+in $jei_smeltery exclude rectX256(27, 38, 18, 16);
+in $jei_smeltery exclude rectX256(45, 6, 16, 48);
+in $jei_smeltery exclude rectX256(74, 36, 12, 2);
+in $jei_smeltery exclude rectX256(72, 38, 16, 2);
+in $jei_smeltery exclude rectX256(72, 40, 6, 14);
+in $jei_smeltery exclude rectX256(82, 40, 6, 14);
+in $jei_smeltery exclude rectX256(78, 40, 1, 1);
+in $jei_smeltery exclude rectX256(81, 40, 1, 1);
+in $jei_smeltery exclude rectX256(78, 51, 1, 1);
+in $jei_smeltery exclude rectX256(81, 51, 1, 1);
+in $jei_smeltery exclude rectX256(78, 52, 4, 2);
+in $jei_smeltery exclude rectX256(99, 6, 16, 48);
+in $jei_smeltery exclude rectX256(133, 6, 16, 48);
+in $jei_smeltery exclude rectX256(115, 38, 18, 16);
+in $jei_smeltery exclude rectX256(5, 64, 16, 55);
+in $jei_smeltery exclude rectX256(57, 64, 16, 55);
+in $jei_smeltery exclude rectX256(21, 103, 36, 16);
+in $jei_smeltery exclude rectX256(102, 64, 16, 55);
+in $jei_smeltery exclude rectX256(133, 64, 16, 55);
+in $jei_smeltery exclude rectX256(118, 103, 18, 16);
+in $jei_smeltery exclude rectX256(160, 0, 16, 16);
+
+#Scroll bar fixes
+in $scrollbar color #5E5E5E -> #35383D;
+in $scrollbar color #A3A3A3 -> #383A3F;
+in $scrollbar color #787878 -> #242528;
+in $scrollbar color #8C8C8C -> #1C1E21;
+in $scrollbar color #B8B8B8 -> #4B4E54;
+in $scrollbar color #DADADA -> #42464C;
+in $scrollbar color #A7A7A7 -> #222528;
+
+#Icon fixes
+in $icons exclude rectX256(57, 2, 12, 14);
+in $icons exclude rectX256(239, 2, 8, 14);
+in $icons exclude rectX256(237, 20, 12, 14);
+in $icons exclude rectX256(234, 37, 18, 15);
+in $icons color #323232 -> #212121;
+in $icons color #5F5F5F -> #000000;
+in $icons color #838383 -> #2C2E33;
+in $icons color #7A7A7A -> #272A2D;
+in $icons color #545454 -> #0F1111;
+in $icons color #B3B3B3 -> #4A4E54;
+in $icons color #A9A9A9 -> #404449;
+
+in $icons color #505050 -> #171717;
+in $icons color #525252 -> #191919;
+in $icons color #545454 -> #1B1B1B;
+in $icons color #565656 -> #1D1D1D;
+in $icons color #575757 -> #1E1E1E;
+in $icons color #585858 -> #1F1F1F;
+in $icons color #595959 -> #202020;
+in $icons color #5A5A5A -> #212121;
+in $icons color #5C5C5C -> #232323;
+in $icons color #5D5D5D -> #242424;
+in $icons color #5E5E5E -> #252525;
+in $icons color #606060 -> #272727;
+in $icons color #616161 -> #282828;
+in $icons color #626262 -> #292929;
+in $icons color #636363 -> #2A2A2A;
+in $icons color #646464 -> #2B2B2B;
+in $icons color #656565 -> #2C2C2C;
+in $icons color #666666 -> #2D2D2D;
+in $icons color #676767 -> #2E2E2E;
+in $icons color #686868 -> #2F2F2F;
+in $icons color #696969 -> #303030;
+in $icons color #6A6A6A -> #313131;
+in $icons color #6B6B6B -> #323232;
+in $icons color #6C6C6C -> #333333;
+in $icons color #6D6D6D -> #343434;
+
+in $icons color #393939 -> #000000;
+in $icons color #3A3A3A -> #010101;
+in $icons color #3B3B3B -> #020202;
+in $icons color #3C3C3C -> #030303;
+in $icons color #3D3D3D -> #040404;
+in $icons color #3E3E3E -> #050505;
+in $icons color #3F3F3F -> #060606;
+in $icons color #414141 -> #080808;
+in $icons color #424242 -> #090909;
+in $icons color #434343 -> #0A0A0A;
+in $icons color #444444 -> #0B0B0B;
+in $icons color #454545 -> #0C0C0C;
+in $icons color #464646 -> #0D0D0D;
+in $icons color #474747 -> #0E0E0E;
+in $icons color #494949 -> #101010;
+in $icons color #4A4A4A -> #111111;
+in $icons color #4C4C4C -> #131313;
+in $icons color #4D4D4D -> #141414;
+in $icons color #4E4E4E -> #151515;
+
+#Icon fix
+in $toolstation exclude rectX256(0, 187, 133, 7);
+
+#Panel fixes
+in $panel exclude rectX256(0, 83, 18, 13);
+in $panel exclude rectX256(126, 83, 126, 83);

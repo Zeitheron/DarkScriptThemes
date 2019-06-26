@@ -1,0 +1,19 @@
+version 1;
+id craftingstation;
+bid b5bdf2f0-01b0-4770-bbcb-e1e0f3b15d6a;
+name "Crafting Station";
+icon "http://dccg.herokuapp.com/cfproject/318551/avatar";
+description "GUI and text fixes for the Crafting Station mod";
+authors ["WenXin2"];
+require mod "craftingstation";
+
+const scrollbar: "craftingstation:textures/gui/generic.png";
+
+# Scroll bar fixes
+in $scrollbar color #5E5E5E -> #35383D;
+in $scrollbar color #A3A3A3 -> #383A3F;
+in $scrollbar color #787878 -> #242528;
+in $scrollbar color #8C8C8C -> #1C1E21;
+in $scrollbar color #B8B8B8 -> #4B4E54;
+in $scrollbar color #DADADA -> #42464C;
+in $scrollbar color #A7A7A7 -> #222528;

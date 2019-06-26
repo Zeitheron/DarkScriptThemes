@@ -1,0 +1,16 @@
+version 1;
+bid f08d101b-4b95-46fd-ac08-520414164698;
+id cyclopscore;
+name "Cyclops Core";
+icon "http://dccg.herokuapp.com/cfproject/232758/avatar";
+description "GUI fixes for Cyclops Core to fix the buttons from the Everlasting Abilities mod";
+authors ["WenXin2"];
+require mod "cyclopscore";
+
+const icons: "cyclopscore:textures/gui/icons.png";
+
+# Icon fixes
+in $icons exclude rectX256(18, 0, 107, 36);
+
+# Exclude Buttons
+exclude cyclopscore:textures/gui/buttons.png;

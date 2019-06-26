@@ -1,0 +1,10 @@
+version 1;
+bid a48fa997-c249-476b-aaa3-6ce34a3ab0df;
+id equipmenttooltips;
+name "Equipment Tooltips";
+icon "http://dccg.herokuapp.com/cfproject/293973/avatar";
+description "GUI fixes for the Equipment Tooltips mod";
+authors ["WenXin2"];
+require mod "equipmenttooltips";
+
+exclude equipmenttooltips:textures/gui/hud.png;

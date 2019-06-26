@@ -1,0 +1,18 @@
+version 1;
+bid dba3e66f-1b40-476c-ad34-5b3139a4705a;
+id lootbags;
+name "Loot Bags";
+icon "http://dccg.herokuapp.com/cfproject/225946/avatar";
+description "GUI fixes for the Loot Bags mod";
+authors ["WenXin2"];
+require mod "lootbags";
+
+const jei_lootbag_gui: "lootbags:textures/gui/jei_lootbag_gui.png";
+
+# Loot bag jei fixes
+in $jei_lootbag_gui color #2A2A2A -> #151719;
+in $jei_lootbag_gui color #404040 -> #151719;
+in $jei_lootbag_gui color #636363 -> #35383D;
+in $jei_lootbag_gui color #787878 -> #35383D;
+in $jei_lootbag_gui color #8F8F8F -> #404449;
+in $jei_lootbag_gui color #BABABA -> #4A4D54;

@@ -1,4 +1,4 @@
-version 3;
+version 4;
 bid 5d647baa-0458-4175-89f4-0efc01e824c8;
 id jei;
 name "Just Enough Items";
@@ -7,7 +7,20 @@ icon "http://dccg.herokuapp.com/cfproject/238222/avatar";
 authors ["Zeitheron"];
 require mod "jei";
 
-in "jei:textures" exclude rect(0 / 256, 100 / 128, 80 / 256, 20 / 128);
-in "jei:textures" exclude rect(128 / 256, 0 / 128, 16 / 256, 16 / 128);
-in "jei:textures" exclude rect(128 / 256, 64 / 128, 10 / 256, 20 / 128);
-in "jei:textures" exclude rect(112 / 256, 80 / 128, 8 / 256, 8 / 128);
+# New approach: since 12r
+# Exclude individual sprites instead of guessing their location in the map (which may vary btw)
+
+const excl: in txmap "jei:textures" exclude sprite
+
+$excl "jei:gui/icons/config_button";
+$excl "jei:gui/button_enabled";
+$excl "jei:gui/button_disabled";
+$excl "jei:gui/button_highlight";
+$excl "jei:gui/icons/arrow_next";
+$excl "jei:gui/icons/arrow_previous";
+$excl "jei:gui/icons/bookmark_button_disabled";
+$excl "jei:gui/icons/bookmark_button_enabled";
+$excl "jei:gui/icons/config_button";
+$excl "jei:gui/icons/config_button_cheat";
+$excl "jei:gui/icons/info";
+$excl "jei:gui/icons/recipe_transfer";

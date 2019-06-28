@@ -1,0 +1,34 @@
+version 1;
+bid a74820f4-500a-4430-bf93-9d2e26c7e4fa;
+id limelib;
+name "Limelib";
+icon "http://dccg.herokuapp.com/cfproject/250711/avatar";
+description "Fixes for LimeLib";
+authors ["Zeitheron"];
+require mod "limelib";
+
+const base: "limelib:textures/gui/base.png";
+
+in $base color #C5C5C5 -> #4A4D54;
+in $base color #C4C4C4 -> #4A4D54;
+in $base color #C3C3C3 -> #4A4D54;
+in $base color #C2C2C2 -> #4A4D54;
+in $base color #C1C1C1 -> #4A4D54;
+in $base color #C0C0C0 -> #4A4D54;
+in $base color #BFBFBF -> #4A4D54;
+
+in $base color #8F8F8F -> #35383D;
+in $base color #8E8E8E -> #35383D;
+in $base color #8D8D8D -> #35383D;
+in $base color #8C8C8C -> #35383D;
+in $base color #8A8A8A -> #35383D;
+
+in $base color #878787 -> #2C2E33;
+in $base color #868686 -> #2C2E33;
+in $base color #858585 -> #2C2E33;
+in $base color #848484 -> #2C2E33;
+in $base color #838383 -> #2C2E33;
+in $base color #828282 -> #2C2E33;
+in $base color #818181 -> #2C2E33;
+in $base color #808080 -> #2C2E33;
+in $base color #7F7F7F -> #2C2E33;

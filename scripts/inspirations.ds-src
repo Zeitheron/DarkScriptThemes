@@ -1,0 +1,29 @@
+version 1;
+bid 31d33df5-7a6e-418b-a5a9-2f78dbfa22ce;
+id inspirations;
+name "Inspirations";
+icon "http://dccg.herokuapp.com/cfproject/284007/avatar";
+description "JEI fixes for Inspirations";
+authors ["WenXin2"];
+require mod "inspirations";
+
+const cauldron: "inspirations:textures/gui/jei/cauldron.png";
+const anvil: "inspirations:textures/gui/jei/anvil_smashing.png";
+
+# JEI Anvil fixes
+in $anvil exclude rectX256(44, 0, 16, 7);
+in $anvil exclude rectX256(48, 7, 8, 4);
+in $anvil exclude rectX256(47, 11, 10, 1);
+in $anvil exclude rectX256(45, 12, 14, 4);
+in $anvil exclude rectX256(98, 0, 16, 7);
+in $anvil exclude rectX256(102, 7, 8, 4);
+in $anvil exclude rectX256(101, 11, 10, 1);
+in $anvil exclude rectX256(99, 12, 14, 4);
+
+# JEI Cauldron fixes
+in $cauldron exclude rectX256(44, 17, 16, 14);
+in $cauldron exclude rectX256(44, 31, 5, 2);
+in $cauldron exclude rectX256(55, 31, 5, 2);
+in $cauldron exclude rectX256(98, 17, 16, 14);
+in $cauldron exclude rectX256(98, 31, 5, 2);
+in $cauldron exclude rectX256(109, 31, 5, 2);

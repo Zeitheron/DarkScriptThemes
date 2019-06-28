@@ -10,12 +10,18 @@ require mod "mario2";
 const recipe_background: "mario2:textures/gui/recipebackground2.png";
 const mario_maker: "mario2:textures/gui/mariomakergui.png";
 
+# Text fixes
+text transform in io.github.Theray070696.mario2.client.gui.*;
+
 # Exclude buttons
 in $recipe_background exclude rectX256(0, 166, 32, 16);
 
 # Mario maker gui & jei fixes
+in $mario_maker color #7D7D7D -> #25292D;
 in $mario_maker color #828282 -> #35383D;
 in $mario_maker color #959595 -> #35383D;
+in $mario_maker color #A4A4A4 -> #36383D;
 in $mario_maker color #494949 -> #1B1E21;
 in $mario_maker color #4C4C4C -> #1B1E21;
-in $mario_maker color #F7F7F7 -> #64686D;
+in $mario_maker color #DADADA -> #434549;
+in $mario_maker color #F9F9F9 -> #64686D;

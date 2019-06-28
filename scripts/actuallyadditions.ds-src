@@ -44,10 +44,20 @@ exclude actuallyadditions:textures/gui/booklet/page_atomic_reconstructor.png
 # Fermenting Barrel gui fixes
 in $fermenting_barrel color #C4C4C4 -> #4A4D54;
 in $fermenting_barrel color #FEFEFE -> #64686D;
+in $fermenting_barrel color #383838 -> #151719;
+in $fermenting_barrel color #393939 -> #151719;
+in $fermenting_barrel color #898989 -> #35383D;
+in $fermenting_barrel color #8A8A8A -> #35383D;
+in $fermenting_barrel color #FDFDFD -> #64686D;
 
 # Canola Press gui fixes
 in $canola_press color #C4C4C4 -> #4A4D54;
 in $canola_press color #FEFEFE -> #64686D;
+in $canola_press color #FDFDFD -> #64686D;
+in $canola_press color #383838 -> #151719;
+in $canola_press color #393939 -> #151719;
+in $canola_press color #898989 -> #35383D;
+in $canola_press color #8A8A8A -> #35383D;
 
 # Feeder icon fixes
 in $feeder color #575757 -> #1B1E21;
@@ -116,6 +126,11 @@ in $coffee color #C4C4C4 -> #4A4D54;
 in $coffee color #C5C5C5 -> #4A4D54;
 in $coffee color #E2E2E2 -> #64686D;
 in $coffee color #FEFEFE -> #64686D;
+in $coffee color #383838 -> #151719;
+in $coffee color #393939 -> #151719;
+in $coffee color #898989 -> #35383D;
+in $coffee color #8A8A8A -> #35383D;
+in $coffee color #FDFDFD -> #64686D;
 
 # Advanced Inputter fix
 in $inputter_advanced color #A09172 -> #514223;

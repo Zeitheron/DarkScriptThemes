@@ -1,4 +1,4 @@
-version 1;
+version 3;
 bid 93cbbcf4-176e-4812-b461-4c7cf442e71d;
 id minecolonies;
 name "Minecolonies";
@@ -7,7 +7,25 @@ icon "http://dccg.herokuapp.com/cfproject/245506/avatar";
 authors ["WenXin2"];
 require mod "minecolonies";
 
-exclude minecolonies:textures/gui/colonist_clipboard.png
-
-#Parchment textures have not been changed/added yet.
-#Parchment textures:
+exclude minecolonies:textures/gui/b*
+exclude minecolonies:textures/gui/citizen/*
+exclude minecolonies:textures/gui/ca*
+exclude minecolonies:textures/gui/co*
+exclude minecolonies:textures/gui/d*
+exclude minecolonies:textures/gui/green_icon.png
+exclude minecolonies:textures/gui/guibanners.png
+exclude minecolonies:textures/gui/guihutbackground.png
+exclude minecolonies:textures/gui/guiparchment*
+exclude minecolonies:textures/gui/left*
+exclude minecolonies:textures/gui/minus*
+exclude minecolonies:textures/gui/mirror*
+exclude minecolonies:textures/gui/plus*
+exclude minecolonies:textures/gui/red_icon.png
+exclude minecolonies:textures/gui/red_wax*
+exclude minecolonies:textures/gui/right*
+exclude minecolonies:textures/gui/rotate*
+exclude minecolonies:textures/gui/townhall*
+exclude minecolonies:textures/gui/turn*
+exclude minecolonies:textures/gui/up*
+exclude minecolonies:textures/gui/vertical_ribbon.png
+exclude minecolonies:textures/gui/yellow_icon.png

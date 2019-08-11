@@ -1,4 +1,4 @@
-version 2;
+version 3;
 bid df32318c-4cdb-471e-9f1a-9eb913ae467b;
 id quark;
 name "Quark";
@@ -12,12 +12,48 @@ include quark:textures/misc/backpack_gui.png
 include quark:textures/misc/matrix_enchanting.png
 include quark:textures/misc/noteblock.png
 include quark:textures/misc/shulker_widget.png
+include quark:textures/misc/general_icons.png
 
-#Matrix Enchanting
+const icons: "quark:textures/misc/general_icons.png";
+
+# Matrix Enchanting
 in "quark:textures/misc/matrix_enchanting.png" exclude rectX256(0, 166, 91, 47);
 
-#Noteblock
+# Noteblock
 in "quark:textures/misc/noteblock.png" exclude rectX256(0, 102, 159, 16);
 
-# Texture Includes for Quark Search Bar
-in "quark:textures/misc/general_icons.png" include rectX256(0, 244, 90, 12);
+# Fixes for General Icons
+in $icons exclude rectX256(87, 18, 7, 6);
+in $icons exclude rectX256(101, 3, 6, 10);
+in $icons exclude rectX256(166, 0, 90, 9);
+in $icons exclude rectX256(32, 228, 16, 16);
+in $icons exclude rectX256(220, 26, 36, 9);
+in $icons exclude rectX256(202, 35, 54, 9);
+in $icons exclude rectX256(1, 82, 14, 11);
+in $icons exclude rectX256(18, 82, 14, 11);
+
+# Chest Sort Button
+in $icons include rectX256(4, 20, 11, 9);
+in $icons color #3B314A -> #44355B;
+in $icons color #554671 -> #604891;
+in $icons color #654D80 -> #795D99;
+
+# Locked Orientation Symbols
+in $icons include rectX256(1, 34, 93, 13);
+in $icons include rectX256(1, 50, 30, 11);
+in $icons color #7F7F7F -> #1C1E21;
+
+# Shulker Buttons
+in $icons include rectX256(19, 130, 10, 12);
+in $icons color #4B4B4B -> #151719;
+in $icons color #606060 -> #212121;
+in $icons color #676767 -> #212121;
+in $icons color #747474 -> #292B30;
+in $icons color #787878 -> #2B2E33;
+in $icons color #7B7B7B -> #303338;
+in $icons color #858585 -> #35383D;
+
+# Speech Bubble
+in $icons include rectX256(242, 9, 14, 17);
+in $icons color #CECECE -> #4A4D54;
+in $icons color #F2F2F2 -> #5C5F63;

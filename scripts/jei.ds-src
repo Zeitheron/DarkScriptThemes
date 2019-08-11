@@ -24,3 +24,6 @@ $excl "jei:gui/icons/config_button";
 $excl "jei:gui/icons/config_button_cheat";
 $excl "jei:gui/icons/info";
 $excl "jei:gui/icons/recipe_transfer";
+
+# Text fixes
+# text transform in mezz.jei.gui.*;

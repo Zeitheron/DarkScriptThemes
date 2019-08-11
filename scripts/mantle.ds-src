@@ -1,4 +1,4 @@
-version 1;
+version 2;
 bid 5358a817-1452-44a7-a9b1-124ec21fce6e;
 id mantle;
 name "Mantle";
@@ -11,6 +11,7 @@ const book: "mantle:textures/gui/book/book.png";
 
 #Text fixes
 text transform in slimeknights.mantle.client.gui.*;
+text transform in slimeknights.tconstruct.tools.common.client.*;
 
 #Crosshair fix
 exclude mantle:textures/gui/crosshair/*;

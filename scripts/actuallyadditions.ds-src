@@ -1,4 +1,4 @@
-version 1;
+version 2;
 bid 28315a74-1971-48b9-a977-12eee8c41fde;
 id actuallyadditions;
 name "Actually Additions";
@@ -22,6 +22,38 @@ const coffee: "actuallyadditions:textures/gui/gui_coffee_machine.png";
 const feeder: "actuallyadditions:textures/gui/gui_feeder.png";
 const canola_press: "actuallyadditions:textures/gui/gui_canola_press.png";
 const fermenting_barrel: "actuallyadditions:textures/gui/gui_fermenting_barrel.png";
+
+const jei_coffee: "actuallyadditions:textures/gui/gui_nei_coffee_machine.png";
+const atomic: "actuallyadditions:textures/gui/gui_nei_atomic_reconstructor.png";
+
+# Coffee Maker fixes
+in $jei_coffee color #543E22 -> #382B13;
+in $jei_coffee color #72665A -> #514223;
+in $jei_coffee color #767676 -> #272A2D;
+in $jei_coffee color #777777 -> #272A2D;
+in $jei_coffee color #8C8C8C -> #35383D;
+in $jei_coffee color #8D8D8D -> #35383D;
+in $jei_coffee color #C3C3C3 -> #4A4D54;
+in $jei_coffee color #C4C4C4 -> #4A4D54;
+in $jei_coffee color #C5C5C5 -> #4A4D54;
+in $jei_coffee color #E2E2E2 -> #64686D;
+in $jei_coffee color #FEFEFE -> #64686D;
+in $jei_coffee color #383838 -> #151719;
+in $jei_coffee color #393939 -> #151719;
+in $jei_coffee color #898989 -> #35383D;
+in $jei_coffee color #8A8A8A -> #35383D;
+in $jei_coffee color #FDFDFD -> #64686D;
+
+# Atomic Reconstructor JEI fixes
+in $atomic color #8C8C8C -> #35383D;
+in $atomic color #8D8D8D -> #35383D;
+in $atomic color #8E8E8E -> #35383D;
+in $atomic color #8F8F8F -> #35383D;
+in $atomic color #C1C1C1 -> #4A4D54;
+in $atomic color #C2C2C2 -> #4A4D54;
+in $atomic color #C3C3C3 -> #4A4D54;
+in $atomic color #C4C4C4 -> #4A4D54;
+in $atomic color #C5C5C5 -> #4A4D54;
 
 # Exclude book images
 exclude actuallyadditions:textures/gui/booklet/page_farmer_cactus.png

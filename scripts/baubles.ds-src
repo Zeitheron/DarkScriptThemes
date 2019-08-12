@@ -1,0 +1,13 @@
+version 1;
+bid 2a6d8c1f-6ca6-4912-ba3a-d6bebc6ea9cd;
+id baubles;
+name "Baubles";
+icon "http://dccg.herokuapp.com/cfproject/227083/avatar";
+description "GUI fixes for Baubles";
+authors ["Zeitheron"];
+require mod "baubles";
+
+text transform in baubles.client.gui.*;
+
+#Crosshair fix
+in "baubles:textures/gui/expanded_inventory.png" exclude rectX256(199, 47, 22, 12);

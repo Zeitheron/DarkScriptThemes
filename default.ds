@@ -93,7 +93,7 @@ color #343E75 -> #263649;
 color #AFB6DA -> #516377;
 
 # Text Color (most guis use the same color btw!)
-text color #404040 -> #BBBBBB;
+text color #404040 -> #FFFFFF;
 
 # Furnace fire textures:
 color #D84C45 -> #474F64;

@@ -1,0 +1,10 @@
+version 1;
+bid eb6b8ef0-c5b7-4f48-94c0-f39053be53c2;
+id hammercore;
+name "Hammer Core";
+icon "http://dccg.herokuapp.com/cfproject/247401/avatar";
+description "Hammer Core fix for smooth GUIs";
+authors ["Zeitheron"];
+require mod "hammercore";
+
+text transform in com.zeitheron.hammercore.client.gui.impl.smooth.*;
